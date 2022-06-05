@@ -3,10 +3,10 @@ import styles from "./Introduction.module.css";
 import Btn from '../../../../components/Button/Btn';
 
 export default function Introduction() {
-  const { title, dark, orange, about } = styles;
+  const { container, title, dark, orange, about } = styles;
 
   return (
-    <div>
+    <div className={container}>
       <h2 className={`${title} ${dark}`}>hey! i am</h2>
       <h2 className={`${title} ${orange}`}>vladimir momiroski</h2>
       <p className={`${about} ${dark}`}>

@@ -1,3 +1,7 @@
+.container {
+    width:50%;
+}
+
 .title {
     text-transform: capitalize;
     font-size: 3rem;
@@ -15,4 +19,6 @@
 
 .about {
     margin-bottom: 1.5rem;
+    text-align: justify;
+    line-height: 1.3rem;
 }
