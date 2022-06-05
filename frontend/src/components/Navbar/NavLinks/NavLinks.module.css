@@ -1,0 +1,22 @@
+.container {
+    display:flex;
+    align-items: center;
+}
+
+.list {
+ margin:0 5rem 0 2.5rem;
+}
+
+.listItem {
+ text-decoration: none;
+ font-weight: 500;
+ color: #251C41;
+}
+
+.listItem:not(:last-child) {
+    margin-right:3rem;
+}
+
+.active {
+    color: #EF9924;
+}

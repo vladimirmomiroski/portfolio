@@ -1,0 +1,18 @@
+.title {
+    text-transform: capitalize;
+    font-size: 3rem;
+    word-spacing: 0.5rem;
+}
+
+.dark {
+    color: #251C41;
+}
+
+.orange {
+    color:#EF9924;
+    margin-bottom: 1.1rem;
+}
+
+.about {
+    margin-bottom: 1.5rem;
+}
