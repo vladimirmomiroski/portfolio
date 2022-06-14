@@ -1,0 +1,20 @@
+.container {
+    display:flex;
+    justify-content: center;
+    width:85%;
+    margin:0 auto;
+    border-top:3px solid #EF9924;
+    padding:1.5rem 0;
+}
+
+.icons {
+    font-size: 1.6rem;
+    padding:0.7rem;
+    border-radius: 25%;
+   color: #251C41;
+}
+
+.icons:hover {
+    background-color: #fff2e1;
+    transition: .5s ease-in-out;
+}

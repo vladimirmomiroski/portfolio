@@ -20,8 +20,8 @@ export default function NavLinks() {
       <Theme/>
         <ul className={list}>
             <NavLink className={`${listItem} ${activeClass('')}`} to='/'>Home</NavLink>
-            <NavLink className={`${listItem} ${activeClass('about')}`} to='/about'>About</NavLink>
-            <NavLink className={`${listItem} ${activeClass('info')}`} to='/info'>Info</NavLink>
+            <NavLink className={`${listItem} ${activeClass('about')}`} to='/about'>About Me</NavLink>
+            <NavLink className={`${listItem} ${activeClass('projects')}`} to='/projects'>Projects</NavLink>
         </ul>
         <Btn text={'Contact Me'}/>
     </div>

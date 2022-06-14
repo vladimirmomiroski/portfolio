@@ -15,7 +15,7 @@ export default function Theme() {
   console.log(whichMode)
   return (
     <div className={container}>
-      <div className={`${whichMode} ${icon}`} onClick={() => setTheme(!theme)}>i</div>
+      <div className={`${whichMode} ${icon}`} onClick={() => setTheme(!theme)}></div>
     </div>
   )
 
