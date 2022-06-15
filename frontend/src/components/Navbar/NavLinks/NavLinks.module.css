@@ -17,6 +17,11 @@
     margin-right:3rem;
 }
 
+.listItem:hover {
+    color: #EF9924;
+    transition: .3s ease-in-out;
+}
+
 .active {
     color: #EF9924;
 }

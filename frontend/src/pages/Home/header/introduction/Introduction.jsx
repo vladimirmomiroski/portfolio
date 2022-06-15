@@ -5,6 +5,10 @@ import Btn from '../../../../components/Button/Btn';
 export default function Introduction() {
   const { container, title, dark, orange, about } = styles;
 
+  const downloadCv = () => {
+    console.log("download cv")
+  }
+
   return (
     <div className={container}>
       <h2 className={`${title} ${dark}`}>hey! i am</h2>
@@ -14,7 +18,7 @@ export default function Introduction() {
         exercitationem hic. Ullam nam magni numquam, cumque reiciendis aperiam
         nesciunt vero.
       </p>
-      <Btn text={'Download CV'}/>
+      <Btn text={'Download CV'} func={downloadCv}/>
     </div>
   );
 }
