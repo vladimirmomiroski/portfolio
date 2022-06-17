@@ -60,4 +60,3 @@ export const projectsData = [
         host: false
     },
 ]
-
