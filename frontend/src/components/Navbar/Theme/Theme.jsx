@@ -1,22 +1,24 @@
-import React, {useContext} from 'react'
-import styles from './Theme.module.css';
-import { Context } from '../../../context/Context';
+import React, { useContext } from "react";
+import styles from "./Theme.module.css";
+import { Context } from "../../../context/Context";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLightbulb, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 export default function Theme() {
+  const { theme, setTheme } = useContext(Context);
 
-  const { theme, setTheme } = useContext(Context)
-  
-  const { container, icon, left, right } = styles;
+  const { container, containerLight, containerDark, icon, left, right } = styles;
 
-  
   const whichMode = theme ? left : right;
-  console.log(theme)
+  const whichTheme = theme ? faMoon : faLightbulb;
+  const containerBorder = theme ? containerLight : containerDark
+  console.log(theme);
 
-  console.log(whichMode)
   return (
-    <div className={container}>
-      <div className={`${whichMode} ${icon}`} onClick={() => setTheme(!theme)}></div>
+    <div className={`${container} ${containerBorder}`} onClick={() => setTheme(!theme)}>
+      <div className={`${whichMode} ${icon}`} >
+        <FontAwesomeIcon icon={whichTheme} />
+      </div>
     </div>
-  )
-
+  );
 }

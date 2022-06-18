@@ -1,0 +1,39 @@
+.container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(219, 219, 219);
+    padding:0.6rem;
+}
+
+.tvHost {
+    color: #fff;
+    margin-left: 0.3rem;
+}
+
+.tvHost:hover {
+    color: rgb(128, 125, 125);
+    transition: .3s ease-in-out;
+}
+
+.xMark {
+    color: #FF0000;
+    font-size:1.2rem;
+}
+
+.codeContainer {
+    display:flex;
+    align-items: center;
+    
+}
+
+.codeIcon {
+    margin-left: 0.3rem;
+    color: #fff;
+    font-size:1.1rem;
+}
+
+.codeIcon:hover {
+    color: rgb(128, 125, 125);
+    transition: .3s ease-in-out;
+}

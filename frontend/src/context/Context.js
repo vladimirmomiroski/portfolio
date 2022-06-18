@@ -1,11 +1,17 @@
-import React, { createContext, useState } from "react";
-import { projectsData } from '../projectsData';
+import React, { createContext, useEffect, useState } from "react";
 
 export const Context = createContext();
 
 export const Provider = ({ children }) => {
 
-  const [projects, setProjects] = useState(projectsData);
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:5000") 
+    .then(res => res.json())
+    .then(data => setProjects(data))
+    
+  }, [])
 
     const [theme, setTheme] = useState("light") ;
 

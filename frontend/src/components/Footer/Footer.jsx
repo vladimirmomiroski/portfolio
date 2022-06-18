@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faInstagram, faGithub, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
 
 export default function Footer() {
   const { container, icons } = styles;
@@ -11,7 +13,7 @@ export default function Footer() {
         rel="noopener noreferrer"
         className={icons}
       >
-        <i className="fab fa-linkedin-in f-icons"></i>
+       <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
       </a>
       <a
         href="https://github.com/vladimirmomiroski"
@@ -19,7 +21,7 @@ export default function Footer() {
         rel="noopener noreferrer"
         className={icons}
       >
-        <i className="fab fa-github f-icons"></i>
+        <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
       </a>
       <a
         href="https://www.instagram.com/vladimirmomiroski/"
@@ -27,7 +29,7 @@ export default function Footer() {
         rel="noopener noreferrer"
         className={icons}
       >
-        <i className="fab fa-instagram f-icons"></i>
+       <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
       </a>
       <a
         href="https://www.facebook.com/vladimir.momiroski"
@@ -35,11 +37,8 @@ export default function Footer() {
         rel="noopener noreferrer"
         className={icons}
       >
-        <i className="fab fa-facebook-f f-icons"></i>
+        <FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon>
       </a>
-   
- 
-    
     </div>
   );
 }

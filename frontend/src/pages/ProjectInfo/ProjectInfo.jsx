@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { Context } from "../../context/Context";
-
+import styles from './ProjectInfo.module.css';
 
 export default function ProjectInfo() {
   const { projects } = useContext(Context);
@@ -11,19 +11,25 @@ export default function ProjectInfo() {
   const [project, setProject] = useState({});
 
   useEffect(() => {
-    const item = projects.find((item) => item.id === +id);
-    setProject(item);
-  }, []);
+    if (projects.length) {
+      const item = projects.find((item) => item._id === id);
+      setProject(item);
+    }
+  }, [projects]);
 
-  const {name, image, desc} = project;
+  const { name, image, desc} = project;
 
-  console.log(image)
+
+ 
+
+  console.log(image);
 
   return (
-    <div>
+    <div className={styles.container}>
+
       <h2>{name}</h2>
       <p>{desc}</p>
-      <img src={'/' + image} alt="project" />
+      <img src={"/" + image} alt="project" />
     </div>
   );
 }
