@@ -5,6 +5,7 @@ export const Context = createContext();
 export const Provider = ({ children }) => {
 
   const [projects, setProjects] = useState([]);
+  const [theme, setTheme] = useState("light") ;
 
   useEffect(() => {
     fetch("http://localhost:5000") 
@@ -13,12 +14,34 @@ export const Provider = ({ children }) => {
     
   }, [])
 
-    const [theme, setTheme] = useState("light") ;
+  const postMail = (mail) => {
+        const options = 
+        {
+          method: "POST",
+          headers: 
+          {
+            'Content-Type': 'application/json'
+          }
+        };
+    
+          fetch('url', options)
+          .then(res => 
+          {
+          
+          })
+          .catch(error => 
+          {
+            throw new Error(error);
+          });
+    };
+
+   
 
   const contextObj = {
       theme,
       setTheme, 
-      projects
+      projects,
+      postMail
   };
 
   return <Context.Provider value={contextObj}>{children}</Context.Provider>;

@@ -1,0 +1,21 @@
+.responsiveInfo {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:0.5rem;
+}
+
+.responsiveTitle {
+    margin-right: 0.4rem;
+}
+
+.responsiveText {
+    padding:0.2rem 0.3rem;
+    background-color: #fff;
+    border-radius: 0.1rem;
+    color: gray;
+}
+
+.responsiveText:not(:last-child) {
+    margin-right:0.3rem;
+}

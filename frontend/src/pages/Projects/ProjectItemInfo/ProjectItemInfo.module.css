@@ -1,0 +1,10 @@
+.infoPart {
+    padding:0.8rem 0;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    background-color: #b9b9b9;
+    color:white;
+    font-weight:500;
+    font-size:0.8rem;
+}
+

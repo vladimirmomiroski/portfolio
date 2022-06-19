@@ -5,7 +5,7 @@ import styles from './ProjectItemSource.module.css';
 
 export default function ProjectItemSource({ host, github }) {
 
-    const { container, tvHost, xMark, codeContainer, codeIcon } = styles;
+    const { container, tvHost, xMark, codeContainer, codeIcon, actionTitle } = styles;
 
   const isItHosted = () => {
     const isHosted = true ? (
@@ -22,9 +22,9 @@ export default function ProjectItemSource({ host, github }) {
 
   return (
     <div className={container}>
-      <div>Host: {isItHosted()}</div>
+      <div><span className={actionTitle}>Host:</span> {isItHosted()}</div>
      <div className={codeContainer}>
-      <p>Code:</p>
+      <span className={actionTitle}>Code:</span>
       <a href={github} rel="noreferrer" target="_blank" className={codeIcon}><FontAwesomeIcon icon={faCodeBranch}/></a>
       </div>
     </div>

@@ -2,13 +2,20 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(219, 219, 219);
-    padding:0.6rem;
+    background-color: rgb(223, 223, 223);
+    padding:0.7rem;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+
+.actionTitle {
+    color:rgb(102, 102, 102);
 }
 
 .tvHost {
     color: #fff;
-    margin-left: 0.3rem;
+    margin-left: 0.4rem;
+    font-size:1.1rem;
 }
 
 .tvHost:hover {
@@ -28,9 +35,9 @@
 }
 
 .codeIcon {
-    margin-left: 0.3rem;
+    margin-left: 0.4rem;
     color: #fff;
-    font-size:1.1rem;
+    font-size:1.2rem;
 }
 
 .codeIcon:hover {

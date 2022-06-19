@@ -18,7 +18,7 @@
     box-shadow: 5px 5px 10px #c4c4c4;
     border-radius:0.3rem;
     text-align: center;
-    padding:0.9rem 0.7rem;
+    padding:0.9rem 0.8rem 1rem;
     position:relative;
 }
 
@@ -27,37 +27,5 @@
     transition: .3s ease-in-out;
 }
 
-.infoPart {
-    padding:0.5rem 0 0;
-    border-radius: 0.3rem;
-    background-color: #b9b9b9;
-    color:white;
-    font-weight:500;
-    font-size:0.9rem;
-}
 
-.responsiveInfo {
-    display:flex;
-    justify-content: center;
-}
-
-.responsiveText {
-    font-size:0.8rem;
-    
-}
-
-.responsiveText:not(:last-child) {
-    margin-right:0.3rem;
-}
-
-.technologiesBox {
-    display:flex;
-    justify-content: center;
-    padding:0.2rem;
-    font-size:0.8rem;
-}
-
-.techItem {
-    margin:0 0.2rem;
-}
 

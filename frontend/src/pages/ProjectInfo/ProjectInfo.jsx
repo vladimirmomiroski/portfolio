@@ -3,12 +3,15 @@ import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { Context } from "../../context/Context";
 import styles from './ProjectInfo.module.css';
+import ProjectInfoItem from "./ProjectInfoItem";
 
 export default function ProjectInfo() {
   const { projects } = useContext(Context);
   const { id } = useParams();
 
   const [project, setProject] = useState({});
+
+  const { container } = styles;
 
   useEffect(() => {
     if (projects.length) {
@@ -17,19 +20,9 @@ export default function ProjectInfo() {
     }
   }, [projects]);
 
-  const { name, image, desc} = project;
-
-
- 
-
-  console.log(image);
-
   return (
-    <div className={styles.container}>
-
-      <h2>{name}</h2>
-      <p>{desc}</p>
-      <img src={"/" + image} alt="project" />
-    </div>
+    <div className={container}>
+      <ProjectInfoItem item={project} />
+      </div>
   );
 }
