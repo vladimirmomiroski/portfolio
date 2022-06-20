@@ -19,7 +19,6 @@ export default function ProjectInfoItem({ item }) {
       <p className={text}>{desc}</p>
       <div className={button} onClick={() => backToProjects()}>
         <FontAwesomeIcon className={iconLeft} icon={faArrowLeft} />
-       <span>Projects</span>
         </div>
     </div>
   );

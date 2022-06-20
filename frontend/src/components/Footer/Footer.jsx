@@ -1,12 +1,22 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faInstagram, faGithub, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
+import { faFacebookF, faInstagram, faGithub, faGithubAlt, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
+
 
 export default function Footer() {
-  const { container, icons } = styles;
+  const { container, icons, textBox, text, portfolioIcon } = styles;
   return (
     <div className={container}>
+     <div className={textBox}>
+      <p className={text}>
+      Portfolio made using MERN stack
+      </p>
+      <a href="https://github.com/vladimirmomiroski/portfolio" target="_blank" rel="noreferrer" className={portfolioIcon}>
+      <FontAwesomeIcon icon={faGithubAlt} />
+      </a>
+     </div>
+      <div>
            <a
         href="https://www.linkedin.com/in/vladimir-momiroski-893081231/"
         target="_blank"
@@ -39,6 +49,7 @@ export default function Footer() {
       >
         <FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon>
       </a>
+      </div>
     </div>
   );
 }

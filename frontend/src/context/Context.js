@@ -15,24 +15,25 @@ export const Provider = ({ children }) => {
   }, [])
 
   const postMail = (mail) => {
-        const options = 
-        {
-          method: "POST",
-          headers: 
-          {
-            'Content-Type': 'application/json'
-          }
-        };
+        // const options = 
+        // {
+        //   method: "POST",
+        //   headers: 
+        //   {
+        //     'Content-Type': 'application/json'
+        //   }
+        // };
     
-          fetch('url', options)
-          .then(res => 
-          {
+        //   fetch('url', options)
+        //   .then(res => 
+        //   {
           
-          })
-          .catch(error => 
-          {
-            throw new Error(error);
-          });
+        //   })
+        //   .catch(error => 
+        //   {
+        //     throw new Error(error);
+        //   });
+        console.log(mail)
     };
 
    

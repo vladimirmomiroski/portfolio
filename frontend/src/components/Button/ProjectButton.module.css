@@ -1,12 +1,9 @@
 .btn {
     border:none;
     background-color: rgb(248, 247, 247);
-    color:rgb(150, 147, 147);
     width:3.6rem;
     height:3.6rem;
     border-radius:50%;
-    font-weight:500;
-    font-size:0.6rem;
     position:absolute;
     top:1rem;
     right:1rem;
@@ -14,7 +11,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size:0.6rem;
+}
+
+.projectText {
+    text-transform: uppercase;
+    font-size:0.5rem;
+    letter-spacing: 0.04rem;
+    font-weight: 500;
+    margin-top:0.3rem;
+    color:rgb(73, 73, 73);
 }
 
 .btn:hover {
@@ -26,6 +31,6 @@
 
 .arrowRight {
     margin-top:0.1rem;
-    font-size:1.05rem;
-    color:rgb(173, 171, 171);
+    font-size:0.8rem;
+    color:rgb(73, 73, 73);
 }

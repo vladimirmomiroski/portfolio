@@ -4,7 +4,7 @@
 }
 
 .list {
- margin:0 5rem 0 2.5rem;
+ margin:0 3rem;
 }
 
 .listItem {
@@ -14,7 +14,7 @@
 }
 
 .listItem:not(:last-child) {
-    margin-right:3rem;
+    margin-right:2.3rem;
 }
 
 .listItem:hover {

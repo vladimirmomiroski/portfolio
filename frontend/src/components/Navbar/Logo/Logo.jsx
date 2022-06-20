@@ -13,7 +13,7 @@ export default function Logo() {
   const { logo } = styles;
   return (
     <>
-    <p onClick={goHomePage} className={logo}>vm</p>
+    <img onClick={goHomePage} className={logo} src="/assets/images/vmLogo.png"  />
     </>
   )
 }

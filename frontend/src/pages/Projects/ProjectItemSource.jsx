@@ -22,9 +22,9 @@ export default function ProjectItemSource({ host, github }) {
 
   return (
     <div className={container}>
-      <div><span className={actionTitle}>Host:</span> {isItHosted()}</div>
+      <div><span className={actionTitle}>host:</span> {isItHosted()}</div>
      <div className={codeContainer}>
-      <span className={actionTitle}>Code:</span>
+      <span className={actionTitle}>code:</span>
       <a href={github} rel="noreferrer" target="_blank" className={codeIcon}><FontAwesomeIcon icon={faCodeBranch}/></a>
       </div>
     </div>

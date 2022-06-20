@@ -1,8 +1,12 @@
 .box {
     text-align: center;
-    width:55%;
+    width:100%;
     padding-top:3rem;
     position: relative;
+    background-color: rgb(250, 250, 250);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    
 }
 
 .img {
@@ -25,15 +29,20 @@
 
 .button {
   position:absolute;
-  background-color: #251C41;
   cursor: pointer;
-  color:#fff;
-  padding: 0.6rem 0.7rem;
-  border-radius: 0.2rem;
-  top:3rem;
-  left:0;
+  color: #251C41;
+  width:4.5rem;
+  height:4.5rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px rgb(206, 204, 204);
+    box-shadow: 0 0 10px rgb(206, 204, 204);
+  bottom:5rem;
+  left:5rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
 .iconLeft {
-    margin-right:0.3rem;
+    font-size:2rem;
 }

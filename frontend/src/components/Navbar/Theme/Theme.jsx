@@ -7,16 +7,15 @@ import { faLightbulb, faMoon } from "@fortawesome/free-solid-svg-icons";
 export default function Theme() {
   const { theme, setTheme } = useContext(Context);
 
-  const { container, containerLight, containerDark, icon, left, right } = styles;
+  const { container, containerLight, containerDark, icon, moon, bulb } = styles;
 
-  const whichMode = theme ? left : right;
   const whichTheme = theme ? faMoon : faLightbulb;
   const containerBorder = theme ? containerLight : containerDark
   console.log(theme);
 
   return (
     <div className={`${container} ${containerBorder}`} onClick={() => setTheme(!theme)}>
-      <div className={`${whichMode} ${icon}`} >
+      <div className={icon} >
         <FontAwesomeIcon icon={whichTheme} />
       </div>
     </div>

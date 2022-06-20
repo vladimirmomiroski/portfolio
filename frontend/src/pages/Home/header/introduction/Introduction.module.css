@@ -6,10 +6,13 @@
     text-transform: capitalize;
     font-size: 3rem;
     word-spacing: 0.5rem;
+    font-family: 'Sedgwick Ave', cursive;
+    letter-spacing: 0.1rem;
 }
 
 .dark {
     color: #251C41;
+    margin-bottom:0.2rem;
 }
 
 .orange {

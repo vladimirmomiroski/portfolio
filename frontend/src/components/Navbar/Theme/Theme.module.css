@@ -1,34 +1,30 @@
 .container {
-  padding: 0.6rem 1.2rem;
+  width:30px;
+  padding:0.1rem;
   border-radius: 0.6rem;
-  position: relative;
+  border-bottom:2px solid;
+  border-top:2px solid;
+  text-align: center;
 }
 
-.containerLight {
-  border: 2px solid #251c41;
+ .containerLight {
+  border-color: #fce6ca;
+  color: #EF9924;
 }
 
 .containerDark {
-  border: 2px solid rgb(247, 241, 241);
+  border-color: rgb(247, 241, 241);
+  color: rgb(247, 241, 241);
 }
 
 .container:hover {
   cursor: pointer;
+  transition: .3s ease-in-out;
+  border-left:2px solid #fce6ca;
+  border-right:2px solid #fce6ca;
+  
 }
 
 .icon {
-  position: absolute;
-  font-size: 1.1rem;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.left {
-  left: 6%;
-  color: #251c41;
-}
-
-.right {
-  right: 6%;
-  color: rgb(247, 241, 241);
+  font-size:1.2rem;
 }

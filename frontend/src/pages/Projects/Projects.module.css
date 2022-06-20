@@ -23,5 +23,6 @@
     transform: translate(-50%, -50%);
     font-size:2.5rem;
     font-weight:500;
-    color:#251C41;
+    color:rgb(94, 94, 94);
+    font-family: 'Sedgwick Ave', cursive;
 }
