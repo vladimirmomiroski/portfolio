@@ -7,11 +7,9 @@ export default function ProjectItemInfo({ item }) {
 
   const {
     infoPart,
-    technologiesBox,
-    techItem,
   } = styles;
 
-  const { desc, responsive, technologies } = item;
+  const { responsive, technologies } = item;
   return (
     <div className={infoPart}>
      <ProjectItemResponsive responsive={responsive}/>

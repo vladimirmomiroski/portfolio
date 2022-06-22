@@ -1,8 +1,9 @@
 .img {
     width:70px;
-    height:60px;
-    object-fit: cover;
+    height:70px;
+    object-fit: scale-down;
 }
+
 
 .title {
     color:#251C41;

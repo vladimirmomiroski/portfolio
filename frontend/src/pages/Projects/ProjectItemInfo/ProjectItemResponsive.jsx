@@ -11,7 +11,7 @@ export default function ProjectItemResponsive({responsive}) {
 
   return (
     <div className={responsiveInfo}>
-      <span className={responsiveTitle}>Responsive:</span>
+      <span className={responsiveTitle}>Resp:</span>
         {responsive.map((el) => (
           <div key={el} className={responsiveText}>
             {el}

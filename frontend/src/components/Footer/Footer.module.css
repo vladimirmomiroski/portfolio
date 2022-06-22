@@ -5,7 +5,7 @@
     width:85%;
     margin:0 auto;
     border-top:3px solid #EF9924;
-    padding:1.5rem 1rem;
+    padding:1.5rem 0.5rem;
 }
 
 .textBox {
@@ -14,11 +14,12 @@
 }
 
 .text {
-    font-family: 'Merriweather', serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight:300;
     font-size:0.75rem;
     margin-right: 0.5rem;
     color:#251C41;
+    letter-spacing: 0.05rem;
 }
 
 .portfolioIcon {

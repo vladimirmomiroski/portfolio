@@ -10,7 +10,7 @@ export default function Footer() {
     <div className={container}>
      <div className={textBox}>
       <p className={text}>
-      Portfolio made using MERN stack
+      developed using MERN stack
       </p>
       <a href="https://github.com/vladimirmomiroski/portfolio" target="_blank" rel="noreferrer" className={portfolioIcon}>
       <FontAwesomeIcon icon={faGithubAlt} />

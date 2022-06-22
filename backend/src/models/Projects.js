@@ -34,7 +34,7 @@ const ProjectsSchema = mongoose.Schema(
   },
   host: 
   {
-    type: Boolean,
+    type: String,
     required: true
   }
 });
