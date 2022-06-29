@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './MainSectionSkillsItem.module.css';
+import MainSectionSkillsSkill from './MainSectionSkillsSkill';
 
 export default function MainSectionSkillsItem({skillsData, title}) {
 
@@ -8,9 +9,11 @@ export default function MainSectionSkillsItem({skillsData, title}) {
   return (
     <div className={container}>
         <h2 className={textTitle}>{title}</h2>
+        <ul>
         {skillsData.map(skill => (
-            <div>{skill}</div>
+            <MainSectionSkillsSkill key={skill} skill={skill}/>
         ))}
+        </ul>
     </div>
   )
 }

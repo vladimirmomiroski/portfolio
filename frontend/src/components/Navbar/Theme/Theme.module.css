@@ -2,8 +2,7 @@
   width:30px;
   padding:0.1rem;
   border-radius: 0.6rem;
-  border-bottom:2px solid;
-  border-top:2px solid;
+  border:2px dotted;
   text-align: center;
 }
 
@@ -20,8 +19,6 @@
 .container:hover {
   cursor: pointer;
   transition: .3s ease-in-out;
-  border-left:2px solid #fce6ca;
-  border-right:2px solid #fce6ca;
   
 }
 

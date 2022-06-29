@@ -1,0 +1,9 @@
+.listItem {
+    list-style:none;
+    padding:0.6rem 0;
+    font-size:0.9rem;
+    font-weight: 500;
+    color:#251C41;
+    border-radius: 0.2rem;
+    box-shadow: 0 2px 2px -2px rgb(228, 226, 226);
+}
