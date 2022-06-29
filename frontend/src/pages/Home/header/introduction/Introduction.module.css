@@ -21,7 +21,23 @@
 }
 
 .about {
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0 1.8rem;
     text-align: justify;
     line-height: 1.3rem;
+}
+
+.resumeBox {
+    display:flex;
+    align-items: center;
+}
+
+.certificateLogo {
+    margin-left:1.3rem;
+    width:55px;
+    height:55px;
+    object-fit: cover;
+}
+
+.certificateLogo:hover {
+    cursor: pointer;
 }

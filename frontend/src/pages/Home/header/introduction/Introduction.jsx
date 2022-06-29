@@ -3,7 +3,7 @@ import styles from "./Introduction.module.css";
 import Btn from '../../../../components/Button/Btn';
 
 export default function Introduction() {
-  const { container, title, dark, orange, about } = styles;
+  const { container, title, dark, orange, about, certificateLogo, resumeBox } = styles;
 
   const downloadCv = () => {
     console.log("download cv")
@@ -18,7 +18,10 @@ export default function Introduction() {
         exercitationem hic. Ullam nam magni numquam, cumque reiciendis aperiam
         nesciunt vero.
       </p>
+      <div className={resumeBox}>
       <Btn text={'Download CV'} func={downloadCv}/>
+      <img className={certificateLogo} src="assets/images/certificateLogo.png" alt="certificate logo" />
+      </div>
     </div>
   );
 }

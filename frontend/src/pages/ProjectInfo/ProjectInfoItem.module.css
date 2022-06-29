@@ -57,3 +57,60 @@
 .iconLeft {
     font-size:2rem;
 }
+
+@media(max-width:900px) {
+    .button {
+        bottom:2.5rem;
+        left:2.5rem;
+    }
+
+    .textBox {
+        width:65%;
+    }
+
+    .title {
+        margin: 2.5rem 0 3.5rem;
+    }
+
+ 
+}
+
+@media(max-width:768px) {
+
+    .textBox {
+        width:80%;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .img {
+        width:150px;
+        height:150px;
+    }
+}
+
+
+@media(max-width:550px) {
+    .button {
+        width:3.8rem;
+        height:3.8rem;
+        bottom:2rem;
+        left:2rem;
+      }
+
+      .iconLeft {
+        font-size:1.5rem;
+    }
+
+    .title {
+        font-size:2rem;
+    }
+}
+
+@media(max-width:360px) {
+    .textBox {
+        width:95%;
+    }
+}

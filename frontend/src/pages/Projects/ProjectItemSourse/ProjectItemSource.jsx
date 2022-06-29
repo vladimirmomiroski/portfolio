@@ -8,7 +8,6 @@ export default function ProjectItemSource({ host, github }) {
     const { container, tvHost, xMark, codeContainer, codeIcon, actionTitle } = styles;
 
   const isItHosted = () => {
-    console.log(host)
     const isHosted = host ? (
       <a className={tvHost} rel="noreferrer" href={host} target="_blank">
         <FontAwesomeIcon icon={faTvAlt} />
@@ -23,11 +22,11 @@ export default function ProjectItemSource({ host, github }) {
 
   return (
     <div className={container}>
-      <div className={codeContainer}><span className={actionTitle}>host:</span> {isItHosted()}</div>
-     <div className={codeContainer}>
+       <div className={codeContainer}>
       <span className={actionTitle}>code:</span>
       <a href={github} rel="noreferrer" target="_blank" className={codeIcon}><FontAwesomeIcon icon={faCodeBranch}/></a>
       </div>
+      <div className={codeContainer}><span className={actionTitle}>host:</span> {isItHosted()}</div>
     </div>
   );
 }

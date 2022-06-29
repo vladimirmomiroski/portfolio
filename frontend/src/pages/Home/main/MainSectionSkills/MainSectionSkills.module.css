@@ -1,0 +1,14 @@
+.container {
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+    padding:2rem 0;
+}
+
+.boxLine {
+    border:3px dashed #251C41;
+    position:absolute;
+    top:50%;
+    width:100%;
+    transform: translateY(-50%);
+}

@@ -8,8 +8,8 @@ export default function ImagePart() {
     <div className={container} >
       <img
       className={image}
-        src="https://h5p.org/sites/default/files/h5p/content/1209180/images/file-6113d5f8845dc.jpeg"
-        alt="profile"
+        src="assets/images/photo.png"
+        alt="myself"
       />
     </div>
   );

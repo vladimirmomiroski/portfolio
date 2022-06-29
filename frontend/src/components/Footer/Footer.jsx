@@ -5,7 +5,7 @@ import { faFacebookF, faInstagram, faGithub, faGithubAlt, faLinkedinIn} from '@f
 
 
 export default function Footer() {
-  const { container, icons, textBox, text, portfolioIcon } = styles;
+  const { container, icons, textBox, text, portfolioIcon, iconsBox} = styles;
   return (
     <div className={container}>
      <div className={textBox}>
@@ -16,7 +16,7 @@ export default function Footer() {
       <FontAwesomeIcon icon={faGithubAlt} />
       </a>
      </div>
-      <div>
+      <div className={iconsBox}>
            <a
         href="https://www.linkedin.com/in/vladimir-momiroski-893081231/"
         target="_blank"

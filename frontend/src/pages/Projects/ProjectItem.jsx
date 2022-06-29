@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ProjectItem.module.css";
 
-import ProjectItemSource from "./ProjectItemSource";
+import ProjectItemSource from "./ProjectItemSourse/ProjectItemSource";
 import ProjectButton from "../../components/Button/ProjectButton";
 import ProjectItemInfo from "./ProjectItemInfo/ProjectItemInfo";
 
