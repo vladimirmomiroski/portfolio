@@ -11,6 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use('/', require('./Routes/routes'))
+app.use('/messages', require('./Routes/routes'))
 
 mongoose
   .connect(DB_URL,
