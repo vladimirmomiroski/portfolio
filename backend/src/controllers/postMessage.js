@@ -7,7 +7,6 @@ exports.postMessage = (request, response) => {
     name: mail.name,
     company: mail.company,
     email: mail.email,
-    phone: mail.phone,
     msg: mail.msg,
   });
 
