@@ -1,7 +1,7 @@
 .container {
     position: fixed;
-    bottom:2.5rem;
-    right:2.5rem;
+    bottom:4rem;
+    right:4rem;
 }
 
 .container:hover {
@@ -9,6 +9,6 @@
 }
 
 .scrollIcon {
-    font-size:2.6rem;
-    color: rgb(15, 226, 216);
+    font-size:3.1rem;
+    color: rgb(0, 199, 189);
 }

@@ -24,6 +24,10 @@
     font-size:1.2rem;
 }
 
+.adressText {
+  margin-left:0.5rem;
+}
+
 @media(max-width:600px) {
   .box {
     font-size: 0.9rem;

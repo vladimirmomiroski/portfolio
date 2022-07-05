@@ -8,7 +8,6 @@ export default function Introduction() {
   const {
     container,
     title,
-    dark,
     orange,
     about,
     certificateLogo,
@@ -19,6 +18,8 @@ export default function Introduction() {
   } = styles;
   const { theme } = useContext(Context);
   const whichTheme = theme ? colorLight : colorDark;
+  let whichLogo = "assets/images/"
+   whichLogo += theme ? "certificateDark.png" : "certificateLight.png" 
 
   const downloadCv = () => {
     console.log("download cv");
@@ -28,14 +29,19 @@ export default function Introduction() {
     <div className={container}>
       <h2 className={`${title} ${whichTheme} ${spaceBottom}`}>hey! i am</h2>
       <h2 className={`${title} ${orange}`}>vladimir momiroski</h2>
-      <p className={`${about} ${whichTheme}`}>
-        Front-end Developer who likes to craft things
+      <div className={about}>
+      <p className={whichTheme}>
+        Front End Developer passsionate about creating interactive
       </p>
+      <p className={whichTheme}>
+       application and experience on the web.
+      </p>
+      </div>
       <div className={resumeBox}>
         <Btn text={"Download CV"} func={downloadCv} />
         <img
           className={certificateLogo}
-          src="assets/images/certificateLogo.png"
+          src={whichLogo}
           alt="certificate logo"
         />
       </div>
