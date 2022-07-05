@@ -9,8 +9,8 @@ export default function Theme() {
 
   const { container, containerLight, containerDark, icon } = styles;
 
-  const whichTheme = theme ? faMoon : faLightbulb;
-  const containerBorder = theme ? containerLight : containerDark
+  const whichTheme = theme ? faLightbulb : faMoon;
+  const containerBorder = theme ?  containerDark : containerLight
 
   return (
     <div className={`${container} ${containerBorder}`} onClick={() => setTheme(!theme)}>

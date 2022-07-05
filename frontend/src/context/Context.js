@@ -7,7 +7,7 @@ export const Provider = ({ children }) => {
   
   const [projects, setProjects] = useState([]);
   const [skills, setSkills] = useState([]);
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(false);
   const [msgSuccess, setMsgSuccess] = useState(false);
 
   const url = "http://localhost:5000/";

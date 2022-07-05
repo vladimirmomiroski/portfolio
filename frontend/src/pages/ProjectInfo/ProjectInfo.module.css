@@ -1,7 +1,11 @@
+.darkBg {
+    background-color: rgb(41, 41, 41);
+}
+
 .container {
-    width:85%;
-    margin:0 auto;
-    min-height: calc(100vh - 205.76px);
-    display:flex;
-    justify-content: center;
+  width: 85%;
+  margin: 0 auto;
+  min-height: calc(100vh - 195px);
+  display: flex;
+  justify-content: center;
 }

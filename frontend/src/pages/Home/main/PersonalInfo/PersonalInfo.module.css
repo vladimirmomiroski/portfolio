@@ -1,0 +1,32 @@
+.personalBox {
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left:1.5rem;
+} 
+
+.personalLight {
+  color:#251C41;
+}
+
+.personalDark {
+  color: white;
+}
+
+.box:not(:last-child) {
+    display:flex;
+    align-items: center;
+   margin-bottom:1.2rem;
+}
+
+.boxIcon {
+    margin-right:0.7rem;
+    font-size:1.2rem;
+}
+
+@media(max-width:600px) {
+  .box {
+    font-size: 0.9rem;
+  }
+   
+}

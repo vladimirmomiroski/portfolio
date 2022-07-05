@@ -1,3 +1,12 @@
+.darkBg {
+  background-color: rgb(44, 44, 44);
+  color:#fff;
+}
+
+.lightBg {
+  color: #251c41;
+}
+
 .container {
   width: 85%;
   margin: 0 auto;
@@ -7,7 +16,6 @@
 }
 
 .text {
-  color: rgb(68, 68, 68);
   width: 60%;
   font-weight: 400;
   text-align: justify;
@@ -64,7 +72,6 @@
 .title {
   font-size: 1.8rem;
   margin: 1rem 0 2.3rem;
-  color: #251c41;
   padding: 0.2rem 0.4rem;
   border-radius: 0.3rem;
   font-family: "Sedgwick Ave", cursive;

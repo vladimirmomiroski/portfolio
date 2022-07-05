@@ -8,6 +8,15 @@
     padding:1.5rem 0.5rem;
 }
 
+.colorLight {
+    color: #251C41;
+}
+
+.colorDark {
+    background-color: rgb(44, 44, 44);
+    color:#fff;
+}
+
 .textBox {
     display:flex;
     align-items: center;
@@ -18,13 +27,11 @@
     font-weight:300;
     font-size:0.75rem;
     margin-right: 0.5rem;
-    color:#251C41;
     letter-spacing: 0.05rem;
 }
 
 .portfolioIcon {
     cursor: pointer;
-    color: #251C41;
     font-size:1.1rem;
     border-radius: 50%;
 }
@@ -32,7 +39,6 @@
 .icons {
     font-size: 1.6rem;
     border-radius: 25%;
-   color: #251C41;
    padding:0.7rem;
 }
 
@@ -41,7 +47,7 @@
 }
 
 .icons:hover {
-    background-color: #fff2e1;
+    background-color: #fcad3e;
     transition: .5s ease-in-out;
 }
 

@@ -10,7 +10,6 @@
 .listItem {
  text-decoration: none;
  font-weight: 500;
- color: #251C41;
 }
 
 .listItem:not(:last-child) {
@@ -20,6 +19,14 @@
 .listItem:hover {
     color: #EF9924;
     transition: .3s ease-in-out;
+}
+
+.lightColor {
+    color:#fff;
+}
+
+.darkColor {
+    color: #251C41;
 }
 
 .active {

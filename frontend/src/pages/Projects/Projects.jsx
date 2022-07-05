@@ -5,18 +5,21 @@ import ProjectItem from './ProjectItem';
 
 
 export default function Projects() {
+  const { container, title, box, bgDark, colorDark, colorLight } = styles;
+  const { projects, theme } = useContext(Context);
+  const whichTheme = theme ? bgDark : ""
+  const whichColor = theme ? colorDark : colorLight;
 
-  const { projects } = useContext(Context);
-  console.log(projects)
-
-  const { container, title, box } = styles;
+  
   return (
+    <section className={whichTheme}>
    <div className={container}>
-    <div className={title}>My Projects</div>
+    <div className={`${title} ${whichColor}`}>My Projects</div>
     <div className={box}>
       {projects && projects.map(el => (
        <ProjectItem key={el._id} item={el} />
     ))}</div>
    </div>
+   </section>
   )
 }

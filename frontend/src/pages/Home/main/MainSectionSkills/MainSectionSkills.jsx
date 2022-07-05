@@ -5,7 +5,7 @@ import MainSectionSkillsItem from './MainSectionSkillsItem/MainSectionSkillsItem
 
 export default function MainSectionSkills() {
 
-    const { container, boxLine } = styles;
+    const { container} = styles;
 
     const { skills } = useContext(Context);
 
@@ -25,10 +25,9 @@ export default function MainSectionSkills() {
     
   return (
     <div className={container}>
-     <div className={boxLine}></div>
-     <MainSectionSkillsItem title={"Tech Skills"} skillsData={techSkillsData}/>
-     <MainSectionSkillsItem title={"Soft Skills"} skillsData={softSkillsData}/>
-     <MainSectionSkillsItem title={"Hard Skills"} skillsData={hardSkillsData}/>
+     <MainSectionSkillsItem color={"light"} title={"Tech Skills"} skillsData={techSkillsData}/>
+     <MainSectionSkillsItem color={"medium"} title={"Soft Skills"} skillsData={softSkillsData}/>
+     <MainSectionSkillsItem color={"dark"} title={"Hard Skills"} skillsData={hardSkillsData}/>
     </div>
   )
 }

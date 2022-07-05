@@ -4,15 +4,22 @@
 
 .title {
     text-transform: capitalize;
-    font-size: 3rem;
+    font-size: 3.5rem;
     word-spacing: 0.5rem;
     font-family: 'Sedgwick Ave', cursive;
     letter-spacing: 0.1rem;
 }
 
-.dark {
-    color: #251C41;
+.spaceBottom {
     margin-bottom:0.2rem;
+}
+
+.colorDark {
+    color: #251C41;
+}
+
+.colorLight {
+    color: #fff;
 }
 
 .orange {
@@ -24,6 +31,8 @@
     margin: 1.5rem 0 1.8rem;
     text-align: justify;
     line-height: 1.3rem;
+    font-size:1.6rem;
+    font-weight: 400;
 }
 
 .resumeBox {
@@ -40,4 +49,29 @@
 
 .certificateLogo:hover {
     cursor: pointer;
+}
+
+
+@media(max-width: 1100px) {
+    .container {
+      width:75%;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom:3rem;
+    }
+
+    .title {
+        font-size:3.2rem;
+    }
+}
+
+@media(max-width: 550px) {
+
+    .container {
+        width:95%;
+    }
+    .title {
+        font-size:2.2rem;
+    }
 }

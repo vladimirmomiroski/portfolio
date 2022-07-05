@@ -4,28 +4,37 @@
     object-fit: scale-down;
 }
 
+.bgDark {
+    background-color: rgb(85, 85, 85);
+    box-shadow: 3px 3px 3px #686868;
+}
+
+.bgLight {
+    box-shadow: 5px 5px 10px #c4c4c4;
+}
+
+.colorLight {
+    color:#251C41;
+}
+
+.colorDark {
+color:#fff;
+}
+
 
 .title {
-    color:#251C41;
     font-weight:500;
     font-size:1.1rem;
     margin:0.3rem 0.6rem 0.7rem;
-    color:#251C41;
     padding:0.6rem;
     border-radius:0.3rem;
   }
 
 .card {
-    box-shadow: 5px 5px 10px #c4c4c4;
     border-radius:0.3rem;
     text-align: center;
     padding:0.9rem 0.8rem 1rem;
     position:relative;
-}
-
-.card:hover {
-    box-shadow: 7px 7px 15px #c4c4c4;
-    transition: .3s ease-in-out;
 }
 
 

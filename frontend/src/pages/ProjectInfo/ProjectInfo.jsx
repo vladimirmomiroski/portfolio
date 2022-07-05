@@ -6,12 +6,15 @@ import styles from './ProjectInfo.module.css';
 import ProjectInfoItem from "./ProjectInfoItem";
 
 export default function ProjectInfo() {
-  const { projects } = useContext(Context);
+  const { projects, theme } = useContext(Context);
+  const { container, darkBg } = styles;
+
+  const whichTheme = theme ? darkBg : ""
   const { id } = useParams();
 
   const [project, setProject] = useState({});
 
-  const { container } = styles;
+  
 
   useEffect(() => {
     if (projects.length) {
@@ -21,8 +24,10 @@ export default function ProjectInfo() {
   }, [projects]);
 
   return (
+    <section className={whichTheme}>
     <div className={container}>
       <ProjectInfoItem item={project} />
       </div>
+      </section>
   );
 }
