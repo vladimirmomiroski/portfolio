@@ -3,6 +3,7 @@ import styles from "./Introduction.module.css";
 import Btn from "../../../../components/Button/Btn";
 import { useContext } from "react";
 import { Context } from "../../../../context/Context";
+import FileSaver from 'file-saver';
 
 export default function Introduction() {
   const {
@@ -10,6 +11,7 @@ export default function Introduction() {
     title,
     orange,
     about,
+    aboutText,
     certificateLogo,
     resumeBox,
     colorDark,
@@ -22,7 +24,10 @@ export default function Introduction() {
    whichLogo += theme ? "certificateDark.png" : "certificateLight.png" 
 
   const downloadCv = () => {
-    console.log("download cv");
+    FileSaver.saveAs(
+      '/resource/cv.pdf',
+      "Portfolio"
+      )
   };
 
   return (
@@ -30,10 +35,10 @@ export default function Introduction() {
       <h2 className={`${title} ${whichTheme} ${spaceBottom}`}>hey! i am</h2>
       <h2 className={`${title} ${orange}`}>vladimir momiroski</h2>
       <div className={about}>
-      <p className={whichTheme}>
+      <p className={`${whichTheme} ${aboutText}`}>
         Front End Developer passsionate about creating interactive
       </p>
-      <p className={whichTheme}>
+      <p className={`${whichTheme} ${aboutText}`}>
        application and experience on the web.
       </p>
       </div>

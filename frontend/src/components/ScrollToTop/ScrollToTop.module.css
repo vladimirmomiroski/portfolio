@@ -12,3 +12,15 @@
     font-size:3.1rem;
     color: rgb(0, 199, 189);
 }
+
+
+@media(max-width:550px) {
+    .container {
+        bottom:1.5rem;
+        right:1.5rem;
+    }
+
+    .scrollIcon {
+        font-size:2.5rem;
+    }
+}

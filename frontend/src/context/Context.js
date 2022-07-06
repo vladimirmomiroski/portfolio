@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from "react";
-import { fetchData } from '../fetchHandlers/fetchHandlers';
+import { fetchData, postData } from '../fetchHandlers/fetchHandlers';
 
 export const Context = createContext();
 
@@ -10,31 +10,15 @@ export const Provider = ({ children }) => {
   const [theme, setTheme] = useState(false);
   const [msgSuccess, setMsgSuccess] = useState(false);
 
-  const url = "http://localhost:5000/";
+  const url = process.env.REACT_APP_URL;
 
   useEffect(() => {
-    fetchData(setProjects, url, "projects")
-    fetchData(setSkills, url, "skills")
+    fetchData(setProjects, url, "/projects")
+    fetchData(setSkills, url, "/skills")
   }, []);
 
   const postMail = (mail) => {
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(mail),
-    };
-
-    fetch("http://localhost:5000/messages", options)
-      .then((res) => {
-        if (res.status === 200) {
-          messageSuccess()
-        }
-      })
-      .catch((error) => {
-        throw new Error(error);
-      });
+    postData(mail, url, "/messages", messageSuccess)
   };
 
   const messageSuccess = () => {

@@ -118,6 +118,10 @@
 }
 
 @media(max-width:1000px) {
+
+    .container {
+        min-height: calc(100vh - 114px);
+    }
     .main {
         flex-direction: column;
     }
@@ -143,9 +147,9 @@
 @media(max-width:550px) {
 
     .textBox {
-        width:97%;
+        width:100%;
     }
     .form {
-        width:97%;
+        width:100%;
     }
 }
