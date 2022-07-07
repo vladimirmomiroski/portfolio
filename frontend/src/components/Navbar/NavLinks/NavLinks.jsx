@@ -1,38 +1,42 @@
-import React from 'react'
-import { NavLink, useLocation, useNavigate} from 'react-router-dom';
-import Btn from '../../Button/Btn';
-import styles from './NavLinks.module.css'
-import Theme from '../Theme/Theme';
-import { useContext } from 'react';
-import { Context } from '../../../context/Context';
+import React, { useState } from "react";
+import styles from "./NavLinks.module.css";
+import Theme from "../Theme/Theme";
+import BurgerMenu from "../../BurgerMenu/BurgerMenu";
+import { useContext } from "react";
+import { Context } from "../../../context/Context";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function NavLinks() {
 
-  const { container, list, listItem, active, lightColor, darkColor } = styles;
-  const { theme } = useContext(Context);
-  const whichTheme = theme ? lightColor : darkColor;
+  const { container, normalMenu, burgerMenu, burgerIcon, colorLight, colorDark} = styles;
+  const { burgerActive, setBurgerActive, theme } = useContext(Context);
 
-  const location = useLocation()
-  const navigate = useNavigate()
+  const whichColor = theme ? colorDark : colorLight; 
+  const isActive = burgerActive ? faXmark : faBars;
 
-  const activeClass = (whichLocation) => {
-    const loc = location.pathname.split("/")[1]
-    return loc === whichLocation ? active : ""
-  }
+  
 
-  const goToContactPage = () => {
-        navigate("/contact")
-  }
+  const toggleBurgerMenu = () => {
+    setBurgerActive(!burgerActive);
+  };
 
   return (
     <div className={container}>
-      <Theme/>
-        <ul className={list}>
-            <NavLink className={`${listItem} ${whichTheme} ${activeClass('')}`} to='/'>Home</NavLink>
-            <NavLink className={`${listItem} ${whichTheme} ${activeClass('about')}`} to='/about'>About Me</NavLink>
-            <NavLink className={`${listItem} ${whichTheme} ${activeClass('projects')}`} to='/projects'>Projects</NavLink>
-        </ul>
-        <Btn text={'Contact Me'} func={goToContactPage} />
+      <Theme />
+      <FontAwesomeIcon
+        onClick={() => toggleBurgerMenu()}
+        className={`${burgerIcon} ${whichColor}`}
+        icon={isActive}
+      />
+      <div className={normalMenu}>
+        <BurgerMenu type={"normal"} />
+      </div>
+      {burgerActive && (
+        <div className={burgerMenu}>
+          <BurgerMenu type={"burger"} />
+        </div>
+      )}
     </div>
-  )
+  );
 }

@@ -6,11 +6,15 @@ import { Context } from '../../../context/Context';
 
 export default function Logo() {
 
+  const { setBurgerActive } = useContext(Context);
+
   const navigate = useNavigate()
 
   const goHomePage = () => {
     navigate("/");
+    setBurgerActive(false);
   }
+
 
   const { logo } = styles;
   const { theme } = useContext(Context);

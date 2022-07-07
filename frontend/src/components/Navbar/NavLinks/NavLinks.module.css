@@ -1,36 +1,62 @@
 .container {
-    display:flex;
+  display: flex;
+  align-items: center;
+}
+
+.burgerMenu {
+  display: none;
+}
+
+.burgerIcon {
+  display: none;
+  z-index: 2;
+  margin-left: 1.2rem;
+  cursor: pointer;
+  font-size: 1.9rem;
+}
+
+.colorLight {
+  color: #251c41;
+}
+
+.colorDark {
+  color: #fff;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .burgerIcon {
+    display: block;
+  }
+
+  .normalMenu {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: flex;
     align-items: center;
-}
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    z-index: 10;
+    margin-top: 114px;
+    background-color: #3d72a4;
+    position: absolute;
+    padding:2rem 0;
+    border-radius: 0.1rem;
+    animation: opacity 0.5s ease-in-out;
+  }
 
-.list {
- margin:0 3rem;
-}
 
-.listItem {
- text-decoration: none;
- font-weight: 500;
-}
-
-.listItem:not(:last-child) {
-    margin-right:2.3rem;
-}
-
-.listItem:hover {
-    color: #EF9924;
-    transition: .3s ease-in-out;
-}
-
-.lightColor {
-    color:#fff;
-}
-
-.darkColor {
-    color: #251C41;
-}
-
-.active {
-    color: #EF9924;
-    text-decoration: underline;
-    text-underline-offset: 0.5rem;
 }
