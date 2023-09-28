@@ -1,0 +1,74 @@
+/* Normal Menu styling */
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.list {
+  margin: 0 3rem;
+}
+
+.listItem {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.listItem:not(:last-child) {
+  margin-right: 2.3rem;
+}
+
+.listItem:hover {
+  color: #ef9924;
+  transition: 0.3s ease-in-out;
+}
+
+/* Burger Menu styling */
+
+.containerBurger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listBurger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 0 1.6rem;
+}
+
+.listItemBurger {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.listItemBurger:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+
+.listItemBurger:hover {
+  color: #ef9924;
+  transition: 0.3s ease-in-out;
+}
+
+.lightColor {
+  color: #fff;
+}
+
+.darkColor {
+  color: #251c41;
+}
+
+.activeMenu {
+  color: #ef9924;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+.activeBurger {
+    color: #ef9924;
+    text-decoration: none;
+}

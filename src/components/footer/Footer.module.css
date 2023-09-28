@@ -1,0 +1,71 @@
+.container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:85%;
+    margin:0 auto;
+    border-top:2px solid #EF9924;
+    padding:1.5rem 0.5rem;
+}
+
+.colorLight {
+    color: #251C41;
+}
+
+.colorDark {
+    background-color: rgb(44, 44, 44);
+    color:#fff;
+}
+
+.textBox {
+    display:flex;
+    align-items: center;
+}
+
+.text {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight:300;
+    font-size:0.75rem;
+    margin-right: 0.5rem;
+    letter-spacing: 0.05rem;
+}
+
+.portfolioIcon {
+    cursor: pointer;
+    font-size:1.1rem;
+    border-radius: 50%;
+}
+
+.icons {
+    font-size: 1.6rem;
+    border-radius: 25%;
+   padding:0.7rem;
+}
+
+.icons:not(:last-child) {
+    margin-right:1rem;
+}
+
+.icons:hover {
+    background-color: #fcad3e;
+    transition: .5s ease-in-out;
+}
+
+@media(max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+        padding:2rem 0;
+    }
+
+    .iconsBox {
+        border-bottom:1px solid rgb(219, 217, 217);
+        padding-bottom:0.9rem;
+        margin-bottom:0.9rem;
+    }
+}
+
+@media(max-width: 550px) {
+    .container {
+        width:100%;
+    }
+}

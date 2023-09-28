@@ -1,0 +1,88 @@
+.bgDark {
+    background-color: rgb(44, 44, 44);
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.colorLight {
+    color:rgb(94, 94, 94);
+    border-bottom:2px solid rgb(94, 94, 94);
+}
+
+.colorDark {
+    color:rgb(177, 176, 176);
+    border-bottom:2px solid rgb(177, 176, 176);
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width:100%;
+    grid-row-gap: 3rem;
+    grid-column-gap: 2rem;
+    padding:1rem 0;
+}
+
+.title {
+    font-size:2.5rem;
+    font-weight:500;
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+@media(max-width:1215px) {
+    .title {
+        transform: none;
+        position:static;
+        margin:2.5rem 0 0;
+    }
+    
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box {
+        grid-template-columns: repeat(2, 1fr);
+        width:100%;
+        grid-row-gap: 3.5rem;
+        grid-column-gap: 3.2rem;
+        padding:2.8rem 0 3.5rem;
+        
+    }
+}
+
+@media(max-width:900px) {
+    .box {
+        grid-row-gap: 3rem;
+        grid-column-gap: 2.5rem;
+    }
+}
+
+@media(max-width:768px) {
+    .box {
+        grid-column-gap: 2.2rem;
+        grid-template-columns: repeat(1, 1fr);
+        width:85%
+    }
+
+    .title {
+        margin:2.5rem 0 0.8rem;
+    }
+}
+
+@media(max-width:550px) {
+    .box {
+        width:100%;
+    }
+
+    .title {
+        font-size:2.1rem;
+    }
+
+    .container {
+        width:92%;
+    }
+}

@@ -1,0 +1,51 @@
+.container {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.2rem;
+  padding: 1rem 0;
+  box-shadow: 0 0 5px 2px rgb(255, 240, 197);
+  background-color: #fff2e1;
+}
+
+.containerLight {
+    border: 3px solid #ffe0b1;
+}
+
+.containerMedium {
+    border: 3px solid #fcc579;
+}
+
+.containerDark {
+    border: 3px solid #ffb856;
+}
+
+.textTitle {
+  border-radius: 0.4rem;
+  font-weight: 500;
+  padding: 0.7rem 0;
+  width:50%;
+  font-size: 1.6rem;
+  font-family: 'Yanone Kaffeesatz', sans-serif; 
+}
+
+
+.itemList {
+  margin-top:0.6rem;
+}
+
+.titleLight {
+    color: #251c41;
+    background-color: #ffce97; 
+}
+
+.titleMedium {
+    color: #251c41;
+    background-color: #ffe1bf;
+}
+
+.titleDark {
+    color: #251c41;
+    background-color: #ffdbb1;
+}
+

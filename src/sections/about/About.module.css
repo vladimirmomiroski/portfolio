@@ -1,0 +1,171 @@
+.darkBg {
+  background-color: rgb(44, 44, 44);
+  color:#fff;
+}
+
+.lightBg {
+  color: #251c41;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 6rem 0;
+}
+
+.text {
+  width: 60%;
+  font-weight: 400;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4rem;
+}
+
+.text:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.text:nth-child(2) {
+  text-indent: 2rem;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.paper {
+  width: 60%;
+  min-height: 500px;
+  -webkit-box-shadow: 0 0 40px rgb(99, 99, 99);
+  box-shadow: 0 0 40px rgb(99, 99, 99);
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.3rem 0;
+  z-index: 5;
+}
+
+.leftGlue {
+  width: 25%;
+  height: 250px;
+  background-color: rgb(192, 192, 192);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-75%);
+  left: 0;
+}
+
+.rightGlue {
+  width: 25%;
+  height: 250px;
+  background-color: rgb(192, 192, 192);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-25%);
+  right: 0;
+}
+
+.title {
+  font-size: 1.8rem;
+  margin: 1rem 0 2.3rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.3rem;
+  font-family: "Sedgwick Ave", cursive;
+}
+
+@media (max-width: 1315px) {
+  .paper {
+    padding: 2rem 0;
+  }
+
+  .title {
+    margin: 0.3rem 0 1.4rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .paper {
+    width: 80%;
+  }
+
+  .rightGlue {
+    width: 20%;
+    height: 180px;
+  }
+
+  .leftGlue {
+    width: 20%;
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .paper {
+    -webkit-box-shadow: 0 0 50px rgb(161, 161, 161);
+    box-shadow: 0 0 50px rgb(161, 161, 161);
+  }
+
+  .rightGlue {
+    width: 17%;
+    height: 100px;
+    top: 80%;
+    transform: translateY(-25%);
+  }
+
+  .leftGlue {
+    width: 17%;
+    height: 100px;
+    top: 20%;
+  }
+}
+
+@media(max-width:670px) {
+
+    .paper {
+        -webkit-box-shadow: 0 0 25px rgb(161, 161, 161);
+    box-shadow: 0 0 25px rgb(161, 161, 161);
+    }
+
+    .text {
+        width:70%;
+    }
+    .box {
+        margin:5rem 0;
+    }
+
+    .rightGlue {
+        width: 15%;
+        height: 100px;
+      }
+    
+      .leftGlue {
+        width: 15%;
+        height: 100px;
+        
+      }
+}
+
+@media(max-width:550px) {
+    .text {
+        text-align: start;
+        width:77%;
+    }
+
+    .container {
+      width: 93%;
+     
+    }
+
+    .rightGlue {
+        top:90%;
+        transform: translateY(0%);
+      }
+    
+      .leftGlue {
+        top:5%;
+      }
+}

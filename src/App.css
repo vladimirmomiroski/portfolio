@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Roboto:wght@300;400;500&family=Sedgwick+Ave&family=Yanone+Kaffeesatz&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}

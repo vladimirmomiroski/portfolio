@@ -1,0 +1,27 @@
+.container {
+  width:30px;
+  padding:0.1rem;
+  border-radius: 0.6rem;
+  border:2px dotted;
+  text-align: center;
+}
+
+ .containerLight {
+  border-color: #fce6ca;
+  color: #EF9924;
+}
+
+.containerDark {
+  border-color: rgb(247, 241, 241);
+  color: rgb(247, 241, 241);
+}
+
+.container:hover {
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  
+}
+
+.icon {
+  font-size:1.2rem;
+}
