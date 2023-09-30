@@ -7,3 +7,10 @@
 .logo:hover {
     cursor: pointer;
 }
+
+@media(max-width: 768px) {
+    .logo {
+        width: 50px;
+        height: 40px;
+    }
+}

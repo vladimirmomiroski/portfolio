@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Roboto:wght@300;400;500&family=Sedgwick+Ave&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cambo&family=Oswald&display=swap');
 
+html {
+  scroll-behavior:smooth;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
 }

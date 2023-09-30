@@ -25,7 +25,7 @@ export default function MainSectionSkills() {
 
     
   return (
-    <div className={`${container} ${whichTheme}`}>
+    <div id="Skills" className={`${container} ${whichTheme}`}>
     <div className={skillsContainer}>
      <MainSectionSkillsItem color={"light"} title={"Tech Skills"} skillsData={techSkillsData}/>
      <MainSectionSkillsItem color={"medium"} title={"Soft Skills"} skillsData={softSkillsData}/>

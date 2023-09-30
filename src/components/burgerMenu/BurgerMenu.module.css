@@ -5,7 +5,7 @@
 }
 
 .list {
-  margin: 0 3rem;
+  margin: 0 2rem;
 }
 
 .listItem {
@@ -18,7 +18,7 @@
 }
 
 .listItem:hover {
-  color: #ef9924;
+  color: #AAF0D1;
   transition: 0.3s ease-in-out;
 }
 
@@ -43,6 +43,7 @@
   font-weight: 500;
   color: #fff;
   font-size: 1.3rem;
+  scroll-behavior: smooth;
 }
 
 .listItemBurger:not(:last-child) {
@@ -50,7 +51,7 @@
 }
 
 .listItemBurger:hover {
-  color: #ef9924;
+  color: #AAF0D1;
   transition: 0.3s ease-in-out;
 }
 
@@ -63,12 +64,12 @@
 }
 
 .activeMenu {
-  color: #ef9924;
+  color: #AAF0D1;
   text-decoration: underline;
   text-underline-offset: 0.5rem;
 }
 
 .activeBurger {
-    color: #ef9924;
+    color: #AAF0D1;
     text-decoration: none;
 }

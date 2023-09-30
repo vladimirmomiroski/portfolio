@@ -6,8 +6,13 @@
     text-transform: capitalize;
     font-size: 3.5rem;
     word-spacing: 0.5rem;
-    font-family: 'Sedgwick Ave', cursive;
-    letter-spacing: 0.1rem;
+    font-family: 'Cambo', serif;
+    line-height: 0.9;
+    
+}
+
+.smallPart {
+    font-weight: 100;
 }
 
 .spaceBottom {
@@ -23,12 +28,12 @@
 }
 
 .orange {
-    color:#EF9924;
+    color:#AAF0D1;
     margin-bottom: 1.3rem;
 }
 
 .about {
-    line-height: 1.5rem;
+    line-height: 1.4rem;
     font-size:1.2rem;
     font-weight: 400;
 }
@@ -40,7 +45,7 @@
 }
 
 .certificateLogo {
-    margin-left:1.3rem;
+    margin-left:1rem;
     width:50px;
     height:65px;
 }
@@ -110,7 +115,7 @@
     }
 
     .orange {
-        color:#EF9924;
+        color: #AAF0D1;
         margin-bottom: 1rem;
     }
 

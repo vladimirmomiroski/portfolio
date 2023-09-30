@@ -18,33 +18,23 @@ export default function BurgerMenu({ type }) {
   } = styles;
   const { theme, setBurgerActive } = useContext(Context);
 
-  const whichActive = type === "burger" ? activeBurger : activeMenu;
   const containerType = type === "burger" ? containerBurger : container;
   const ulType = type === "burger" ? listBurger : list;
   const whichItem = type === "burger" ? listItemBurger : listItem;
   const whichTheme = theme ? lightColor : darkColor;
  
 
-
-  const activeClass = (whichLocation) => {
-    // const loc = location.pathname.split("/")[1];
-    return 0;
-  };
-
-  // const goToContactPage = () => {
-  //   navigate("/contact");
-  // };
-
-  const burgerActiveHandler = () => {
-    setBurgerActive(false);
-  };
-
   return (
     <div className={containerType}>
-  
-      <div onClick={() => burgerActiveHandler()}>
+        <div className={ulType}>
+        <a className={`${whichItem} ${whichTheme}`} href="#">Home</a>
+        <a className={`${whichItem} ${whichTheme}`} href="#About">About</a>
+        <a className={`${whichItem} ${whichTheme}`} href="#Skills">Skills</a>
+        <a className={`${whichItem} ${whichTheme}`} href="#Projects">Projects</a>
+        </div>
+      <a href="#Contact">
         <Btn text={"Contact Me"} func={() => console.log('1')}/>
-      </div>
+        </a>
     </div>
   );
 }

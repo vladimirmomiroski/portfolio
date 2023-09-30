@@ -12,7 +12,7 @@ export default function Projects() {
 
   
   return (
-    <section className={whichTheme}>
+    <section id="Projects" className={whichTheme}>
    <div className={container}>
     <div className={`${title} ${whichColor}`}>My Projects</div>
     <div className={box}>

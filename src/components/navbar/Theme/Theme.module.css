@@ -4,16 +4,8 @@
   border-radius: 0.6rem;
   border:2px dotted;
   text-align: center;
-}
-
- .containerLight {
-  border-color: #fce6ca;
-  color: #EF9924;
-}
-
-.containerDark {
-  border-color: rgb(247, 241, 241);
-  color: rgb(247, 241, 241);
+  border-color: #AAF0D1;
+  color: #AAF0D1;
 }
 
 .container:hover {

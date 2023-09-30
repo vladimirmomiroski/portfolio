@@ -9,6 +9,7 @@ export default function Introduction() {
   const {
     container,
     title,
+    smallPart,
     orange,
     about,
     aboutText,
@@ -33,8 +34,8 @@ export default function Introduction() {
 
   return (
     <div className={container}>
-      <h2 className={`${title} ${whichTheme} ${spaceBottom}`}>hey! i am</h2>
-      <h2 className={`${title} ${orange}`}>vladimir momiroski</h2>
+      <h2 className={`${title} ${whichTheme} ${spaceBottom}`}>Hello!</h2>
+      <h2 className={`${title} ${orange}`}><span className={smallPart}>i'm</span> vladimir momiroski</h2>
       <div className={about}>
         <p className={`${whichTheme} ${aboutText}`}>
           Front End Developer passsionate about creating interactive&nbsp;

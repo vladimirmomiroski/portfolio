@@ -5,9 +5,9 @@ import NavLinks from './NavLinks/NavLinks';
 import { Context } from '../../context/Context';
 
 export default function Navbar() {
-    const { container, navDark } = styles;
+    const { container, navDark, navLight } = styles;
     const { theme } = useContext(Context);
-    const whichTheme = theme ? navDark : ""
+    const whichTheme = theme ? navDark : navLight
   return (
     <nav className={whichTheme}>
     <div className={container}>

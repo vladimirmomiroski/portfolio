@@ -8,7 +8,7 @@ export default function ImagePart() {
   const { container, image } = styles;
   const { theme } = useContext(Context);
   let whichTheme = "assets/images/"
-   whichTheme += theme ? "photoDark.png" : "photoLight.png";
+   whichTheme += theme ? "photoLight.png" : "photoDark.png"
   return (
     <div className={container} >
       <img

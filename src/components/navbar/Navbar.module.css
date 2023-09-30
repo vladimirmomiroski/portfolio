@@ -1,13 +1,16 @@
 .container {
-    width:85%;
-    margin:0 auto;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:1.5rem 0;
-    box-shadow: 0 4px 2px -2px rgb(251, 251, 251);
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
 }
 
 .navDark {
-    background-color: rgb(41, 41, 41);
+  background-color: rgb(41, 41, 41);
+}
+
+.navLight {
+  background-color: rgb(247, 247, 247);
 }
