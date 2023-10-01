@@ -28,7 +28,7 @@ export default function ProjectItem({ item }) {
 
   return (
     <div className={`${card} ${whichTheme}`}>
-      <img className={img} src={image} alt="" />
+      <img className={img} src={image} alt="project" />
       <p className={`${title} ${whichColor}`}>{name}</p>
       <ProjectItemInfo item={item}/>
       <ProjectItemSource host={host} github={github} />

@@ -2,31 +2,27 @@
   display:flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 0.2rem;
   padding: 1rem 0;
-  box-shadow: 0 0 5px 2px rgb(255, 240, 197);
-  background-color: #fff2e1;
+  background-color: #ebfdf5;
 }
 
 .containerLight {
-    border: 3px solid #ffe0b1;
+    border: 3px solid #79d3ab;
 }
 
 .containerMedium {
-    border: 3px solid #fcc579;
+    border: 3px solid #79d3ab;
 }
 
 .containerDark {
-    border: 3px solid #ffb856;
+    border: 3px solid #79d3ab;
 }
 
 .textTitle {
-  border-radius: 0.4rem;
   font-weight: 500;
   padding: 0.7rem 0;
   width:50%;
   font-size: 1.6rem;
-  font-family: 'Yanone Kaffeesatz', sans-serif; 
 }
 
 
@@ -36,16 +32,16 @@
 
 .titleLight {
     color: #251c41;
-    background-color: #ffce97; 
+    background-color: #79d3ab;
 }
 
 .titleMedium {
     color: #251c41;
-    background-color: #ffe1bf;
+    background-color: #79d3ab;
 }
 
 .titleDark {
     color: #251c41;
-    background-color: #ffdbb1;
+    background-color: #79d3ab;
 }
 

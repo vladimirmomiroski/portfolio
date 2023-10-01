@@ -7,11 +7,11 @@ import { Context } from "../../context/Context";
 
 
 export default function Footer() {
-  const { container, icons, textBox, text, portfolioIcon, iconsBox, colorLight, colorDark} = styles;
+  const { wrapper, container, icons, textBox, text, portfolioIcon, iconsBox, colorLight, colorDark} = styles;
   const { theme } = useContext(Context);
   const whichTheme = theme ? colorDark : colorLight;
   return (
-    <footer className={whichTheme}>
+    <footer className={`${whichTheme} ${wrapper}`}>
     <div className={`${container} ${whichTheme}`}>
      <div className={textBox}>
       <p className={text}>

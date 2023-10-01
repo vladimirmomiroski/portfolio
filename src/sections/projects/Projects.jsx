@@ -1,20 +1,19 @@
 import React, { useContext } from 'react';
 import styles from './Projects.module.css';
-import { Context  } from '../../context/Context';
+import { Context } from '../../context/Context';
 import ProjectItem from './ProjectItem';
+import MainTitle from '../../components/MainTitle/MainTitle';
 
 
 export default function Projects() {
-  const { container, title, box, bgDark, colorDark, colorLight } = styles;
+  const { container, box, bgDark, bgLight } = styles;
   const { projects, theme } = useContext(Context);
-  const whichTheme = theme ? bgDark : ""
-  const whichColor = theme ? colorDark : colorLight;
-
+  const whichTheme = theme ? bgDark : bgLight;
   
   return (
     <section id="Projects" className={whichTheme}>
    <div className={container}>
-    <div className={`${title} ${whichColor}`}>My Projects</div>
+    <MainTitle text={"Projects"}/>
     <div className={box}>
       {projects.length && projects.map(el => (
        <ProjectItem key={el.id} item={el} />

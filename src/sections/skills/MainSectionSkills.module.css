@@ -1,14 +1,16 @@
 
 .mainDark {
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(41, 41, 41);
 }
 
 .mainLight {
-    background-color: rgb(253, 253, 253);
+    background-color: #fff;
 }
 .container {
     text-align: center;
-    padding:4rem 0;
+    padding:3rem 0 0; 
+    width: 85%;
+    margin:0 auto;
 }
 
 @media(max-width:600px) {
@@ -19,11 +21,8 @@
 
 .skillsContainer {
    display:grid;
-   width: 85%;
-   margin:0 auto;
    grid-template-columns: repeat(3, 1fr);
    column-gap: 8rem;
-    padding:2rem 0;
 }
 
 @media(max-width:1400px) {

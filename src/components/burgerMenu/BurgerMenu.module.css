@@ -18,7 +18,7 @@
 }
 
 .listItem:hover {
-  color: #AAF0D1;
+  color: #79d3ab;
   transition: 0.3s ease-in-out;
 }
 
@@ -64,12 +64,12 @@
 }
 
 .activeMenu {
-  color: #AAF0D1;
+  color: #79d3ab;
   text-decoration: underline;
   text-underline-offset: 0.5rem;
 }
 
 .activeBurger {
-    color: #AAF0D1;
+    color: #79d3ab;
     text-decoration: none;
 }

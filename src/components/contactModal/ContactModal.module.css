@@ -1,0 +1,98 @@
+.backdrop {
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.modal {
+  background-color: #fff;
+  width: 500px;
+  position: relative;
+  border-radius: 0.5rem;
+  background-color: #79d3ab;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.modalHeader {
+    padding: 1.5rem 0;
+}
+
+.closeModal {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form {
+    display:flex;
+    flex-direction: column;
+    padding: 0 1.5rem 1.5rem;
+}
+
+.input {
+  margin:0.2rem 0 0.5rem;
+  padding:0.8rem 0.4rem;
+  color:rgb(41, 41, 41);
+  resize:none;
+  width: 100%;
+  outline: transparent;
+  border: none;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+.label {
+    font-weight: 500;
+    display:flex;
+    align-items: center;
+}
+
+.optionalText {
+    font-size:0.8rem;
+    color:rgb(185, 184, 184);
+    margin-left:0.2rem;
+}
+
+.errorText {
+    color:rgb(122, 8, 8);
+    font-size:0.8rem;
+    margin-left:0.3rem;
+}
+
+.button {
+    border: 2px solid #47ac7e;
+    padding:0.7rem 0;
+    background-color: rgb(41, 41, 41);
+    font-weight: 700;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 0.5rem;
+    background-color: transparent;
+}
+
+
+.button:hover {
+    cursor: pointer;
+}
+
+.successMessage {
+    width: 300px;
+    padding: 2rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(41, 41, 41);
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

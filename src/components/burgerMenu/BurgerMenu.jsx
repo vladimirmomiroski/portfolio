@@ -11,18 +11,19 @@ export default function BurgerMenu({ type }) {
     listBurger,
     listItem,
     listItemBurger,
-    activeMenu,
-    activeBurger,
     lightColor,
     darkColor,
   } = styles;
-  const { theme, setBurgerActive } = useContext(Context);
+  const { theme, setIsActiveContactModal } = useContext(Context);
 
   const containerType = type === "burger" ? containerBurger : container;
   const ulType = type === "burger" ? listBurger : list;
   const whichItem = type === "burger" ? listItemBurger : listItem;
   const whichTheme = theme ? lightColor : darkColor;
  
+  const openContactModal = () => {
+        setIsActiveContactModal(true);
+  }
 
   return (
     <div className={containerType}>
@@ -32,9 +33,9 @@ export default function BurgerMenu({ type }) {
         <a className={`${whichItem} ${whichTheme}`} href="#Skills">Skills</a>
         <a className={`${whichItem} ${whichTheme}`} href="#Projects">Projects</a>
         </div>
-      <a href="#Contact">
-        <Btn text={"Contact Me"} func={() => console.log('1')}/>
-        </a>
+      <div>
+        <Btn text={"Contact Me"} func={() => openContactModal()}/>
+        </div>
     </div>
   );
 }

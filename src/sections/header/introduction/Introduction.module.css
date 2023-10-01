@@ -27,8 +27,8 @@
     color: #fff;
 }
 
-.orange {
-    color:#AAF0D1;
+.green {
+    color:#79d3ab;
     margin-bottom: 1.3rem;
 }
 
@@ -114,8 +114,7 @@
         width:85%;
     }
 
-    .orange {
-        color: #AAF0D1;
+    .green {
         margin-bottom: 1rem;
     }
 

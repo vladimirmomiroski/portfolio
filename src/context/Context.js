@@ -10,6 +10,7 @@ export const Provider = ({ children }) => {
   const [theme, setTheme] = useState(true);
   const [msgSuccess, setMsgSuccess] = useState(false);
   const [burgerActive, setBurgerActive] = useState(false);
+  const [isActiveContactModal, setIsActiveContactModal] = useState(false);
 
 
   useEffect(() => {
@@ -42,7 +43,9 @@ export const Provider = ({ children }) => {
     skills,
     msgSuccess,
     burgerActive,
-    setBurgerActive
+    setBurgerActive,
+    isActiveContactModal,
+    setIsActiveContactModal
   };
 
   return <Context.Provider value={contextObj}>{children}</Context.Provider>;

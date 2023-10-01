@@ -10,7 +10,7 @@ export default function Introduction() {
     container,
     title,
     smallPart,
-    orange,
+    green,
     about,
     aboutText,
     certificateLogo,
@@ -35,7 +35,7 @@ export default function Introduction() {
   return (
     <div className={container}>
       <h2 className={`${title} ${whichTheme} ${spaceBottom}`}>Hello!</h2>
-      <h2 className={`${title} ${orange}`}><span className={smallPart}>i'm</span> vladimir momiroski</h2>
+      <h2 className={`${title} ${green}`}><span className={smallPart}>i'm</span> vladimir momiroski</h2>
       <div className={about}>
         <p className={`${whichTheme} ${aboutText}`}>
           Front End Developer passsionate about creating interactive&nbsp;
