@@ -10,3 +10,27 @@ html {
   box-sizing: border-box;
   font-family: "Oswald", Arial, Helvetica, sans-serif;
 }
+
+.bgDark {
+  background: linear-gradient(
+    30deg,
+    #5c7a6b 0%,
+    rgb(56, 75, 66) 0%,
+    #26332d 40%,
+    rgb(31, 39, 35) 60%,
+    rgb(25, 32, 29) 80%,
+    rgb(3, 3, 3) 100%
+  ) !important;
+}
+
+.bgLight {
+  background: linear-gradient(
+    30deg,
+    #d7f5e6 0%,
+    rgb(236, 253, 248),
+    rgb(242, 255, 251),
+    rgb(234, 252, 246) 60%,
+    rgb(250, 255, 253) 80%,
+    rgb(255, 255, 255) 100%
+  );
+}

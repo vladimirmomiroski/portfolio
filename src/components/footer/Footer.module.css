@@ -1,15 +1,10 @@
-.wrapper {
-    border-top:2px solid #79d3ab;
-}
-
 .container {
     display:flex;
     justify-content: space-between;
     align-items: center;
     width:85%;
     margin:0 auto;
-    
-    padding:1.5rem 0.5rem;
+    padding:3rem 0.5rem;
 }
 
 .colorLight {
@@ -17,7 +12,6 @@
 }
 
 .colorDark {
-    background-color: rgb(44, 44, 44);
     color:#fff;
 }
 

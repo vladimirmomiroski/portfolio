@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./MainSectionSkillsItem.module.css";
 import MainSectionSkillsSkill from "./MainSectionSkillsSkill";
 
-export default function MainSectionSkillsItem({ skillsData, title, color }) {
+export default function MainSectionSkillsItem({ skillsData, title, color, height }) {
   const {
     container,
     textTitle,
@@ -29,9 +29,11 @@ export default function MainSectionSkillsItem({ skillsData, title, color }) {
       ? titleMedium
       : titleDark;
 
+      console.log(height)
+
 
   return (
-    <div className={`${container} ${whichColor}`}>
+    <div className={`${container} ${whichColor} ${styles[height]}`}>
       <h2 className={`${textTitle} ${whichTitle}`}>{title}</h2>
       <div className={itemList}>
         {skillsData.map((skill) => (

@@ -29,14 +29,15 @@ export default function MainSectionSkills() {
         <MainTitle text={"Skills"} />
         <div className={skillsContainer}>
           <MainSectionSkillsItem
-            color={"light"}
-            title={"Tech Skills"}
-            skillsData={techSkillsData}
-          />
-          <MainSectionSkillsItem
             color={"medium"}
             title={"Soft Skills"}
             skillsData={softSkillsData}
+          />
+            <MainSectionSkillsItem
+            color={"light"}
+            title={"Tech Skills"}
+            skillsData={techSkillsData}
+  
           />
           <MainSectionSkillsItem
             color={"dark"}

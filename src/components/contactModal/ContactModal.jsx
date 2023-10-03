@@ -7,8 +7,10 @@ import { useForm, ValidationError } from "@formspree/react";
 
 export default function ContactModal() {
   const { setIsActiveContactModal, theme } = useContext(Context);
-  const whichTheme = theme ? styles.bgDark : "";
-  const whichColor = theme ? styles.labelLight : styles.labelDark;
+  const whichTheme = theme ? styles.bgDark : styles.bgLight;
+  const whichColor = theme ? styles.colorLight : styles.colorDark;
+  const whichBorder = theme ? styles.borderLight : styles.borderDark;
+  const whichButton = theme ? styles.buttonLight : styles.buttonDark;
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -53,7 +55,7 @@ export default function ContactModal() {
       <div className={`${styles.modal} ${whichTheme}`}>
         <div className={styles.modalHeader}>
           <FontAwesomeIcon
-            className={styles.closeModal}
+            className={`${styles.closeModal} ${whichColor}`}
             onClick={() => setIsActiveContactModal(false)}
             icon={faClose}
           />
@@ -86,7 +88,7 @@ export default function ContactModal() {
             </label>
             <input
               id="fullname"
-              className={styles.input}
+              className={`${styles.input} ${whichBorder} ${whichColor}`}
               value={name}
               placeholder="Your name..."
               onChange={(e) => setName(e.target.value)}
@@ -99,7 +101,7 @@ export default function ContactModal() {
             </label>
             <input
               id="email"
-              className={styles.input}
+              className={`${styles.input} ${whichBorder} ${whichColor}`}
               type="email"
               value={email}
               placeholder="Your email..."
@@ -120,7 +122,7 @@ export default function ContactModal() {
             </label>
             <textarea
               onChange={(e) => setMessage(e.target.value)} // Update message state
-              className={styles.input}
+              className={`${styles.input} ${whichBorder} ${whichColor}`}
               value={message}
               placeholder="Your message..."
               id="msg"
@@ -129,7 +131,7 @@ export default function ContactModal() {
               name="msg"
             />
             <button
-              className={styles.button}
+              className={`${styles.button} ${whichColor} ${whichButton}`}
               type="submit"
               disabled={state.submitting}
             >

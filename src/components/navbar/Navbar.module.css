@@ -6,11 +6,3 @@
   align-items: center;
   padding: 1.5rem 0;
 }
-
-.navDark {
-  background-color: rgb(44, 44, 44);
-}
-
-.navLight {
-  background-color: #fff;
-}

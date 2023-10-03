@@ -3,11 +3,12 @@
   padding: 0.3rem 0;
   font-size: 0.9rem;
   font-weight: 500;
-  color: #251c41;
+  color: #fff;
    display: -webkit-flexbox;
   display: flex;
   align-items: center;
    -webkit-align-items: center;
+   font-family: 'Oswald', sans-serif;
 }
 
 .iconBox {
@@ -15,7 +16,7 @@
 }
 
 .circleIcon {
-  font-size: 0.4rem;
+  font-size: 0.6rem;
   margin-right: 0.4rem;
-  color: #79d3ab;
+  color: #00f5e0;
 }
