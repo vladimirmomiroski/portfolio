@@ -3,19 +3,12 @@
     text-align: start;
     position: relative;
     width: fit-content;
+    color: #00f5e0;
 }
 
 .textStyle {
     font-size:2.5rem;
     letter-spacing: 0.1rem;
-}
-
-.colorLight { 
-    color: #00f5e0;
-}
-
-.colorDark {
-    color:#00f5e0;
 }
 
 @media(max-width:600px) {

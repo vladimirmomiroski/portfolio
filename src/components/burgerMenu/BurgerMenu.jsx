@@ -28,7 +28,6 @@ export default function BurgerMenu({ type }) {
   return (
     <div className={containerType}>
         <div className={ulType}>
-        <a className={`${whichItem} ${whichTheme}`} href="#">Home</a>
         <a className={`${whichItem} ${whichTheme}`} href="#About">About</a>
         <a className={`${whichItem} ${whichTheme}`} href="#Skills">Skills</a>
         <a className={`${whichItem} ${whichTheme}`} href="#Projects">Projects</a>

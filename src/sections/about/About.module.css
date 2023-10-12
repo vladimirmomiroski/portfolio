@@ -7,6 +7,14 @@
   padding: 4rem 0;
 }
 
+.lightBg {
+  color: rgb(41, 41, 41);
+}
+
+.darkBg {
+  color: #fff;
+}
+
 .text {
   width: 65%;
   font-size: 17px;
@@ -40,7 +48,6 @@
   border-image: linear-gradient(rgb(74, 87, 85), #00f5e0) 30;
   border-width: 3px;
   border-style: solid;
-  color: #fff;
 }
 
 .title {

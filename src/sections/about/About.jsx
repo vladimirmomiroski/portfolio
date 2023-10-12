@@ -5,14 +5,14 @@ import { useContext } from "react";
 import { Context } from "../../context/Context";
 
 export default function About() {
-  const { container, paper, box, leftHalf, text, title, lightBg, darkBg } = styles;
+  const { container, paper, box, text, title, lightBg, darkBg } = styles;
   const { theme } = useContext(Context);
-  const whichTheme = theme ? lightBg : darkBg;
+  const whichTheme = theme ? darkBg : lightBg
   return (
-    <section id="About" className={whichTheme}>
+    <section id="About">
     <div className={container}>
       <div className={box}>
-        <div className={paper}>
+        <div className={`${paper} ${whichTheme}`}>
           <p className={title}>My Journey</p>
           {AboutData.map(({para}, idx) => (
             <p key={idx} className={text}>{para}</p>

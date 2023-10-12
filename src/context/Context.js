@@ -8,7 +8,6 @@ export const Provider = ({ children }) => {
   const [projects, setProjects] = useState([]);
   const [skills, setSkills] = useState([]);
   const [theme, setTheme] = useState(true);
-  const [msgSuccess, setMsgSuccess] = useState(false);
   const [burgerActive, setBurgerActive] = useState(false);
   const [isActiveContactModal, setIsActiveContactModal] = useState(false);
 
@@ -23,14 +22,6 @@ export const Provider = ({ children }) => {
     }
   }, []);
 
-
-  const messageSuccess = () => {
-    setMsgSuccess(true)
-    setTimeout(() => {
-       setMsgSuccess(false)
-    }, 3000)
-  }
-
   const themeHandler = () => {
     setTheme(!theme)
     localStorage.setItem("theme", !theme)
@@ -41,7 +32,6 @@ export const Provider = ({ children }) => {
     themeHandler,
     projects,
     skills,
-    msgSuccess,
     burgerActive,
     setBurgerActive,
     isActiveContactModal,

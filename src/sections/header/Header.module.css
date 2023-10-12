@@ -1,11 +1,3 @@
-/* .headerLight {
-    background-color: rgb(249, 249, 249);
-}
-
-.headerDark {
-    background-color: rgb(41, 41, 41);
-} */
-
 .container {
     display:flex;
     justify-content: space-between;

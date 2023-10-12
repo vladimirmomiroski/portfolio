@@ -8,7 +8,7 @@
 }
 
 .colorLight {
-    color: #251C41;
+    color: rgb(41, 41, 41);
 }
 
 .colorDark {
@@ -44,8 +44,8 @@
 }
 
 .icons:hover {
+    transition: .3s ease-in-out;
     background-color: #79d3ab;
-    transition: .5s ease-in-out;
 }
 
 @media(max-width: 768px) {

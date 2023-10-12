@@ -6,7 +6,7 @@ import MainTitle from "../../components/MainTitle/MainTitle";
 
 export default function MainSectionSkills() {
   const { theme } = useContext(Context);
-  const { wrapper, mainDark, mainLight, container, skillsContainer } = styles;
+  const { mainDark, mainLight, container, skillsContainer } = styles;
   const whichTheme = theme ? mainDark : mainLight;
 
   const { skills } = useContext(Context);
@@ -29,18 +29,15 @@ export default function MainSectionSkills() {
         <MainTitle text={"Skills"} />
         <div className={skillsContainer}>
           <MainSectionSkillsItem
-            color={"medium"}
             title={"Soft Skills"}
             skillsData={softSkillsData}
           />
             <MainSectionSkillsItem
-            color={"light"}
             title={"Tech Skills"}
             skillsData={techSkillsData}
   
           />
           <MainSectionSkillsItem
-            color={"dark"}
             title={"Hard Skills"}
             skillsData={hardSkillsData}
           />

@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Cambo&family=Oswald&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cambo&family=Oswald&display=swap");
 
 html {
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Oswald", Arial, Helvetica, sans-serif;
 }
 
 .bgDark {
@@ -26,11 +25,26 @@ html {
 .bgLight {
   background: linear-gradient(
     30deg,
-    #d7f5e6 0%,
-    rgb(236, 253, 248),
-    rgb(242, 255, 251),
-    rgb(234, 252, 246) 60%,
-    rgb(250, 255, 253) 80%,
-    rgb(255, 255, 255) 100%
+    #dafffb 0%,
+    rgb(245, 253, 251) 20%,
+    rgb(244, 253, 250) 40%,
+    rgb(243, 253, 250) 60%,
+    rgb(244, 248, 247) 80%,
+    #fff 100%
   );
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Oswald', sans-serif;
+ 
+ 
+}
+
+p, span, a, button {
+  font-family: 'Cambo', sans-serif;
 }
