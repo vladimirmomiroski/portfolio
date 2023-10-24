@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import { Context } from "./context/Context";
 import Navbar from "./components/navbar/Navbar";
@@ -9,14 +9,42 @@ import Projects from "../src/sections/projects/Projects";
 import MainSectionSkills from "./sections/skills/MainSectionSkills";
 import Footer from "../src/components/footer/Footer";
 import ContactModal from "./components/contactModal/ContactModal";
+import ScrollToTop from '../src/components/ScrollToTop/ScrollToTop'
 
 function App() {
-  const { isActiveContactModal, theme } = useContext(Context);
-  const whichTheme = theme ? "bgDark" : "bgLight"  
+  const { isActiveContactModal, burgerActive, theme } = useContext(Context);
+  const whichTheme = theme ? "bgDark" : "bgLight";
   const contactModal = document.getElementById("contactModal");
+  const [scrollable, setScrollable] = useState(true);
+
+  useEffect(() => {
+    setScrollable(!burgerActive);
+  }, [isActiveContactModal, burgerActive]);
+
+  useEffect(() => {
+    if (scrollable) {
+      document.body.classList.remove("notScrollable");
+    } else {
+      document.body.classList.add("notScrollable");
+    }
+  }, [scrollable]);
+
+  const [scrollPosition, setScrollPosition] = useState(window.scrollY);
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    scrollPosition > 300 ? setScroll(true) : setScroll(false);
+  }, [scrollPosition]);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      const s = window.scrollY;
+      setScrollPosition(s);
+    });
+  }, []);
 
   return (
-    <div className="App">
+    <div>
       <div className={whichTheme}>
         <Navbar />
         <Header />
@@ -26,6 +54,7 @@ function App() {
         <Footer />
         {isActiveContactModal &&
           ReactDOM.createPortal(<ContactModal />, contactModal)}
+          {scroll && <ScrollToTop/>}
       </div>
     </div>
   );

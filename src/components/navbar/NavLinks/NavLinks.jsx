@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function NavLinks() {
-  const { container, normalMenu, open, close, burgerMenu, burgerIcon, colorLight, colorDark, bgLight, bgDark } = styles;
+  const { container, normalMenu, open, close, burgerMenu, burgerIcon, burgerClose, colorLight, colorDark, bgLight, bgDark } = styles;
   const { burgerActive, setBurgerActive, theme } = useContext(Context);
 
   const whichColor = theme ? colorDark : colorLight;
@@ -26,7 +26,6 @@ export default function NavLinks() {
         className={`${burgerIcon} ${whichColor}`}
         icon={isActive}
       />
-
       <div className={`${normalMenu} ${whichColor}`}>
         <BurgerMenu type={"normal"} />
       </div>

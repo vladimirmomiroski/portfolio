@@ -38,7 +38,7 @@ export default function Introduction() {
       <h2 className={`${title} ${green}`}><span className={smallPart}>i'm</span> vladimir momiroski</h2>
       <div className={about}>
         <p className={`${whichTheme} ${aboutText}`}>
-          Front End Developer passsionate about creating interactive&nbsp;
+          Front End Developer passionate about creating interactive&nbsp;
         </p>
         <p className={`${whichTheme} ${aboutText}`}>
           application and experience on the web.

@@ -10,6 +10,12 @@ html {
   box-sizing: border-box;
 }
 
+.notScrollable {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
 .bgDark {
   background: linear-gradient(
     30deg,
@@ -40,11 +46,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Oswald', sans-serif;
- 
- 
+  font-family: "Oswald", sans-serif;
 }
 
-p, span, a, button {
-  font-family: 'Cambo', sans-serif;
+p,
+span,
+a,
+button {
+  font-family: "Cambo", sans-serif;
 }

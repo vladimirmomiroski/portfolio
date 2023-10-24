@@ -2,10 +2,10 @@
   display:flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1rem 0 2.5rem;
   background-color: rgb(41, 41, 41);
   border-radius: 50%;
-  box-shadow: 0 6px 4px -2px #037065;
+  box-shadow: 0 6px 4px -2px #00f5e0;
 }
 
 .textTitle {
@@ -13,7 +13,7 @@
   padding: 0.7rem 0;
   width:50%;
   font-size: 1.6rem;
-  color: #fff;
+  color: #00f5e0;
 }
 
 

@@ -1,0 +1,26 @@
+.container {
+    position: fixed;
+    bottom:4rem;
+    right:4rem;
+}
+
+.container:hover {
+    cursor: pointer;
+}
+
+.scrollIcon {
+    font-size:3.1rem;
+    color: #00f5e0;
+}
+
+
+@media(max-width:550px) {
+    .container {
+        bottom:1.5rem;
+        right:1.5rem;
+    }
+
+    .scrollIcon {
+        font-size:2.5rem;
+    }
+}

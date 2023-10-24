@@ -1,0 +1,17 @@
+.main {
+     background-color: #00f5e0;
+     padding: 0.4rem 0.5rem;
+     color: rgb(41, 41, 41);
+     text-decoration: none;
+     font-size: 14px;
+     font-weight: 700;
+}
+
+.secondary {
+    background-color: #00f5e0;
+    padding: 0.4rem 0.5rem;
+    color: rgb(41, 41, 41);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}

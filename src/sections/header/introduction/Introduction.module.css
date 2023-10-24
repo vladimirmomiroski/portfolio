@@ -1,10 +1,10 @@
 .container {
-    width:50%;
+    width:45%;
 }
 
 .title {
     text-transform: capitalize;
-    font-size: 3.5rem;
+    font-size: 4rem;
     word-spacing: 0.5rem;
     line-height: 0.9;
     
@@ -19,7 +19,7 @@
 }
 
 .colorDark {
-    color: #251C41;
+    color: rgb(41, 41, 41);
 }
 
 .colorLight {

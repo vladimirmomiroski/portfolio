@@ -25,20 +25,13 @@ export default function Footer() {
 
   const { theme } = useContext(Context);
   const whichColor = theme ? colorDark : colorLight;
+  const year = new Date().getFullYear()
 
   return (
     <footer className={wrapper}>
       <div className={container}>
         <div className={`${textBox} ${whichColor}`}>
-          <p className={text}>developed using React</p>
-          <a
-            href="https://github.com/vladimirmomiroski/portfolio"
-            target="_blank"
-            rel="noreferrer"
-            className={`${portfolioIcon} ${whichColor}`}
-          >
-            <FontAwesomeIcon icon={faGithubAlt} />
-          </a>
+          <p className={text}>&#169; Copyright {year} VM</p>
         </div>
         <div className={iconsBox}>
           <a

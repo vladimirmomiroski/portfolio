@@ -3,13 +3,18 @@
     text-align: start;
     position: relative;
     width: fit-content;
-    color: #00f5e0;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    
 }
 
 .textStyle {
-    font-size:2.5rem;
-    letter-spacing: 0.1rem;
+    font-size:2.3rem;
+    margin-right: 0.4rem;
+    box-shadow: 0 5px 5px -5px #fff;
 }
+
 
 @media(max-width:600px) {
 
