@@ -1,10 +1,9 @@
-
 .container {
-  width: 85%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   padding: 4rem 0;
+  position: relative;
 }
 
 .lightBg {
@@ -32,15 +31,14 @@
 
 .box {
   width: 100%;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
 .paper {
   min-height: 450px;
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,6 +46,44 @@
   border-image: linear-gradient(rgb(74, 87, 85), #00f5e0) 30;
   border-width: 3px;
   border-style: solid;
+  z-index: 2;
+  background: transparent;
+}
+
+.circle {
+  width: 450px; /* Set the width of the circle */
+  height: 450px;
+  background: linear-gradient(
+    30deg,
+    rgba(125, 236, 227, 0.4) 0%,
+    rgba(123, 219, 211, 0.4) 10%,
+    rgba(132, 228, 219, 0.4) 20%,
+    rgba(141, 237, 228, 0.4) 30%,
+    rgba(150, 245, 236, 0.4) 40%,
+    rgba(159, 245, 221, 0.4) 50%,
+    rgba(169, 245, 206, 0.4) 60%,
+    rgba(154, 240, 199, 0.4) 70%,
+    rgba(138, 235, 192, 0.4) 80%,
+    rgba(95, 192, 148, 0.4) 90%,
+    rgba(52, 148, 105, 0.4) 100%
+  );
+  position: absolute;
+  left: -200px; /* Hide the left 200px of the circle */
+  top: 5%;
+  border-radius: 50%;
+  overflow: hidden; /* Hide the overflowing part of the circle */
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    border: 1px solid rgba(87, 179, 138, 0.5);
+  }
+  100% {
+    transform: rotate(360deg);
+    border: 1px solid rgba(125, 236, 227, 0.5);
+  }
 }
 
 .title {
@@ -56,7 +92,7 @@
   padding: 0.2rem 0.4rem;
   font-weight: bold;
   border-radius: 0.3rem;
-  font-family: 'Cambo', serif;
+  font-family: "Cambo", serif;
   text-transform: uppercase;
 }
 
@@ -72,7 +108,7 @@
 
 @media (max-width: 1000px) {
   .paper {
-    width: 80%;
+    width: 90%;
   }
 
   .rightGlue {
@@ -86,27 +122,18 @@
   }
 }
 
-
-@media(max-width:670px) {
-
-
-    .text {
-        width:70%;
-    }
-    .box {
-        margin:5rem 0;
-    }
-
+@media (max-width: 670px) {
+  .text {
+    width: 70%;
+  }
+  .box {
+    margin: 5rem 0;
+  }
 }
 
-@media(max-width:550px) {
-    .text {
-        text-align: start;
-        width:77%;
-    }
-
-    .container {
-      width: 93%;
-     
-    }
+@media (max-width: 550px) {
+  .text {
+    text-align: start;
+    width: 77%;
+  }
 }

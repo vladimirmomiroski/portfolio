@@ -1,6 +1,17 @@
+
+.cardWrapper {
+  /* dark version */
+  background: linear-gradient(147.16deg, rgba(41, 41, 41, 1) 14.71%, rgba(41, 41, 41, 0.9) 114.16%);
+ -webkit-box-shadow: 1px 1px 1px #424242;
+  box-shadow: 1px 1px 1px #424242;
+
+/* light version */
+  /* background: linear-gradient(147.16deg, rgba(41, 41, 41, 1) 14.71%, rgba(41, 41, 41, 0.9) 114.16%); */
+}
+
+
 .card {
   text-align: center;
-  background-color: rgb(41, 41, 41);
 }
 
 .titleWrapper {
@@ -35,7 +46,7 @@
 }
 
 .viewProjectWrapper {
-  background-color: rgb(41, 41, 41);
+  
   padding-bottom: 1.2rem;
 }
 
@@ -44,4 +55,5 @@
   margin: 0 auto;
   display:flex;
   justify-content: space-between;
+  
 }

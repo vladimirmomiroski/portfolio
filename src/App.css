@@ -16,7 +16,7 @@ html {
   overflow: hidden;
 }
 
-.bgDark {
+/* .bgDark {
   background: linear-gradient(
     30deg,
     #5c7a6b 0%,
@@ -26,9 +26,20 @@ html {
     rgb(25, 32, 29) 80%,
     rgb(3, 3, 3) 100%
   ) !important;
+} */
+
+.bgDark {
+  background: linear-gradient(
+    30deg,
+    #1c1636 0%,
+    rgb(17, 14, 36),
+    rgb(13, 10, 29) 50%,
+    rgb(10, 7, 24) 75%,
+    #000000 100%
+  );
 }
 
-.bgLight {
+/* .bgLight {
   background: linear-gradient(
     30deg,
     #dafffb 0%,
@@ -38,6 +49,17 @@ html {
     rgb(244, 248, 247) 80%,
     #fff 100%
   );
+} */
+
+.bgLight {
+ background: linear-gradient(
+    30deg,
+    #ffffcc 0%,
+    #ffffce 33%,
+    #ffffd2 66%,
+    rgb(252, 252, 210) 100%
+  );
+  
 }
 
 h1,

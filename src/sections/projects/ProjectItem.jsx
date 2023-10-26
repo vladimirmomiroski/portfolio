@@ -17,6 +17,7 @@ export default function ProjectItem({ item }) {
     descriptionText,
     viewProjectWrapper,
     viewProject,
+    cardWrapper
     
   } = styles;
 
@@ -26,7 +27,7 @@ export default function ProjectItem({ item }) {
   const { id, name, image, host, github, desc } = item;
 
   return (
-    <div>
+    <div className={cardWrapper}>
       <div className={`${card} ${whichTheme}`}>
         <div className={titleWrapper}>
           <img className={img} src={image} alt="project" />
