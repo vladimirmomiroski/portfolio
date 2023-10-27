@@ -30,11 +30,11 @@ html {
 .bgLight {
   background: linear-gradient(
     30deg,
-    #fbffd4 0%,
-    #fbffd5 25%,
-    #fcffd9 50%,
-    #fcfdde 75%,
-    #feffe6 100%
+    #fcffde 0%,
+    rgb(253, 255, 230) 25%,
+    rgb(253, 255, 233) 50%,
+    rgb(254, 255, 237) 75%,
+    rgb(254, 255, 239) 100%
   );
 }
 
