@@ -28,14 +28,7 @@ html {
 }
 
 .bgLight {
-  background: linear-gradient(
-    30deg,
-    #fcffde 0%,
-    rgb(253, 255, 230) 25%,
-    rgb(253, 255, 233) 50%,
-    rgb(254, 255, 237) 75%,
-    rgb(254, 255, 239) 100%
-  );
+  background-color: #f1fff1;
 }
 
 h1,
