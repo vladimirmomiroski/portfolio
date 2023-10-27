@@ -33,7 +33,7 @@ function App() {
   const [scroll, setScroll] = useState(false);
 
   useEffect(() => {
-    scrollPosition > 300 ? setScroll(true) : setScroll(false);
+    scrollPosition > 450 ? setScroll(true) : setScroll(false);
   }, [scrollPosition]);
 
   useEffect(() => {

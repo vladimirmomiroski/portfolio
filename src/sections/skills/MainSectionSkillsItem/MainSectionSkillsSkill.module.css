@@ -3,11 +3,18 @@
   padding: 0.3rem 0;
   font-size: 0.9rem;
   font-weight: 500;
-  color: #fff;
    display: -webkit-flexbox;
   display: flex;
   align-items: center;
    -webkit-align-items: center;
+}
+
+.colorLight {
+  color: #fff;
+}
+
+.colorDark {
+  color: rgb(41, 41, 41);
 }
 
 .iconBox {

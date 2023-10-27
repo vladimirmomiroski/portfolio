@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './ScrollToTop.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowAltCircleUp } from '@fortawesome/free-regular-svg-icons';
+import { faCaretSquareUp } from '@fortawesome/free-regular-svg-icons';
 
 export default function ScrollToTop() {
 
@@ -16,7 +16,7 @@ export default function ScrollToTop() {
   return (
 
     <div className={container} onClick={scrollToTopHandler}>
-        <FontAwesomeIcon className={scrollIcon} icon={faArrowAltCircleUp} />
+        <FontAwesomeIcon className={scrollIcon} icon={faCaretSquareUp} />
     </div>
   )
 }

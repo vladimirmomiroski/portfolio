@@ -51,27 +51,27 @@
 }
 
 .circle {
-  width: 450px; /* Set the width of the circle */
+  width: 450px;
   height: 450px;
   background: linear-gradient(
     30deg,
-    rgba(125, 236, 227, 0.4) 0%,
-    rgba(123, 219, 211, 0.4) 10%,
-    rgba(132, 228, 219, 0.4) 20%,
-    rgba(141, 237, 228, 0.4) 30%,
-    rgba(150, 245, 236, 0.4) 40%,
-    rgba(159, 245, 221, 0.4) 50%,
-    rgba(169, 245, 206, 0.4) 60%,
-    rgba(154, 240, 199, 0.4) 70%,
-    rgba(138, 235, 192, 0.4) 80%,
-    rgba(95, 192, 148, 0.4) 90%,
-    rgba(52, 148, 105, 0.4) 100%
+    rgba(45, 146, 138, 0.3) 0%,
+    rgba(114, 212, 204, 0.3) 10%,
+    rgba(106, 185, 177, 0.3) 20%,
+    rgba(141, 237, 228, 0.3) 30%,
+    rgba(108, 202, 193, 0.3) 40%,
+    rgba(94, 170, 147, 0.3) 50%,
+    rgba(136, 202, 168, 0.3) 60%,
+    rgba(86, 179, 134, 0.3) 70%,
+    rgba(92, 180, 141, 0.3) 80%,
+    rgba(107, 197, 156, 0.3) 90%,
+    rgba(46, 143, 99, 0.3) 100%
   );
   position: absolute;
-  left: -200px; /* Hide the left 200px of the circle */
+  left: -200px;
   top: 5%;
   border-radius: 50%;
-  overflow: hidden; /* Hide the overflowing part of the circle */
+  overflow: hidden; 
   animation: spin 6s linear infinite;
 }
 
@@ -109,16 +109,6 @@
 @media (max-width: 1000px) {
   .paper {
     width: 90%;
-  }
-
-  .rightGlue {
-    width: 20%;
-    height: 180px;
-  }
-
-  .leftGlue {
-    width: 20%;
-    height: 180px;
   }
 }
 

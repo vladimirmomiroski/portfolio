@@ -4,7 +4,7 @@
     align-items: center;
     width:85%;
     margin:0 auto;
-    padding:3rem 0.5rem;
+    padding:4rem 0.5rem;
 }
 
 .colorLight {
@@ -51,7 +51,7 @@
 @media(max-width: 768px) {
     .container {
         flex-direction: column-reverse;
-        padding:2rem 0;
+        padding:3.5rem 0;
     }
 
     .iconsBox {
