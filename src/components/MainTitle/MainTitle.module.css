@@ -1,5 +1,5 @@
 .container {
-    padding:2.5rem 0;
+    padding:0 0 3rem;
     text-align: start;
     position: relative;
     width: fit-content;
@@ -29,7 +29,7 @@
 @media(max-width:600px) {
 
     .container {
-        padding:1.8rem 0;
+        padding:2.2rem 0;
     }
     .textStyle {
         font-size:1.9rem;

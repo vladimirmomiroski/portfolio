@@ -1,7 +1,7 @@
 .container {
   width: 85%;
   margin: 0 auto;
-  padding: 3rem 0 5rem;
+  padding: 1.5rem 0;
 }
 
 .box {
@@ -23,7 +23,6 @@
     width: 100%;
     grid-row-gap: 3.5rem;
     grid-column-gap: 3.2rem;
-    padding: 2.8rem 0 3.5rem;
   }
 }
 
@@ -36,9 +35,16 @@
 
 @media (max-width: 768px) {
   .box {
-    grid-column-gap: 2.2rem;
+    grid-column-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 87%;
+  }
+
 }
 
 @media (max-width: 550px) {

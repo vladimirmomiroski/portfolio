@@ -6,3 +6,11 @@
      font-size: 14px;
      font-weight: 700;
 }
+
+.bgLight {
+   background-color: #9bfcf4;;
+}
+
+.bgDark {
+     background-color: #00f5e0;
+}

@@ -1,7 +1,7 @@
 
 .container {
     text-align: center;
-    padding:3rem 0 0; 
+    padding: 1.5rem 0;
     width: 85%;
     margin:0 auto;
 }
@@ -34,9 +34,12 @@
 
 
 @media(max-width:600px) {
+
+    .container {
+        width: 87%;
+    }
     .skillsContainer {
         grid-template-columns: repeat(1, 1fr);
-        column-gap: 0rem;
         row-gap: 2.5rem;
     }
    
