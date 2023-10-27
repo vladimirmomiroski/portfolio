@@ -17,7 +17,7 @@
 
 .colorLight {
     color: rgb(41, 41, 41);
-    box-shadow: 0 5px 5px -5px #eeee90;
+    box-shadow: 0 5px 5px -5px rgb(212, 212, 212);
 }
 
 .colorDark {
