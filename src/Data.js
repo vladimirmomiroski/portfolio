@@ -26,6 +26,16 @@ export const Skills = [
     },
     {
       id: 2,
+      name: "Goodies App",
+      desc: `Goodies helps users discover and explore food items with three main features: searching for food items, pagination for search results, and detailed item information.`,
+      image: "/assets/images/socialLogo.png",
+      responsive: ["Mobile", "Dekstop", "Tablet"],
+      technologies: ["React"],
+      github: "https://github.com/vladimirmomiroski/delicious_food",
+      host: "https://goodies-food.netlify.app"
+    },
+    {
+      id: 3,
       name: "Street Artists",
       desc: `Web space for every street artist that will allow them to be able to track their
       income, and to have a place on the web where they can showcase their masterpieces.`,
@@ -35,27 +45,15 @@ export const Skills = [
       github: "https://github.com/vladimirmomiroski/streetArtists",
       host: "https://street-artists.netlify.app/",
     },
-  
-    {
-      id: 3,
-      name: "Brainster Labs",
-      desc: `Brainster Labs is web app responsible for setting up all the projects that were made by students from the academies of marketing, design and
-      programming.`,
-      image: "/assets/images/brainsterLogo.png",
-      responsive: ["Mobile", "Dekstop", "Tablet"],
-      technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySql"],
-      github: "https://github.com/vladimirmomiroski/brainsterLabs",
-      host: "https://vladimirmomiroski12.000webhostapp.com/index.html",
-    },
     {
       id: 4,
-      name: "Todo App",
-      desc: `Todo application created in React, ExpressJS and mongoDB with CRUD(create, read, update, delete) functionality.`,
-      image: "/assets/images/todoLogo.png",
-      responsive: ["Dekstop"],
-      technologies: ["React", "ExpressJS", "NodeJS", "mongoDB" ],
-      github: "https://github.com/vladimirmomiroski/todo_app",
-      host: "",
+      name: "Pintado Portfolio",
+      desc: `The Pintado Portfolio is an elegant online showcase of captivating drawings, providing a window into the artist's creative world.`,
+      image: "/assets/images/socialLogo.png",
+      responsive: ["Mobile", "Dekstop", "Tablet"],
+      technologies: ["React"],
+      github: "https://github.com/vladimirmomiroski/pintado-portfolio",
+      host: "https://aleksandra-pintado.netlify.app",
     },
     {
       id: 5,
@@ -65,17 +63,18 @@ export const Skills = [
       responsive: ["Dekstop"],
       technologies: ["React"],
       github: "https://github.com/vladimirmomiroski/bike-shop",
-      host: "",
+      host: "https://mini-bike-shop.netlify.app",
     },
     {
       id: 6,
-      name: "Social app",
-      desc: `Mini social-app, with a functionality of displaying cards with load more, like on posts with localStorage support and displaying the clicked post in modal.`,
+      name: "Social App",
+      desc: `Social App features card-based posts with "Load More" functionality, enables post liking, supports local storage, and allows users to view clicked posts in a modal.`,
       image: "/assets/images/socialLogo.png",
       responsive: ["Mobile", "Dekstop", "Tablet"],
       technologies: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/vladimirmomiroski/EmbedSocial",
-      host: "",
+      host: "https://mini-social-app1.netlify.app",
     },
+   
   ];
   

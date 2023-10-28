@@ -6,9 +6,9 @@
 }
 
 .bgLight {
-  background: linear-gradient(147.16deg, rgba(208, 240, 255, 0.4) 14.71%, rgba(208, 240, 255, 0.3) 114.16%);
-  -webkit-box-shadow: 1px 1px 1px #e9e9e9;
-  box-shadow: 1px 1px 1px #e9e9e9;
+  background: linear-gradient(147.16deg,  rgba(191, 255, 226, 0.2) 14.71%,  rgba(191, 255, 226, 0.3) 114.16%);
+  -webkit-box-shadow: 1px 1px 1px #d4d4d4;
+  box-shadow: 1px 1px 1px #d4d4d4;
 }
 
 .colorLight {
