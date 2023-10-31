@@ -107,20 +107,6 @@
     background-color: #42524a;
 }
 
-.successMessage {
-    width: 300px;
-    padding: 2rem;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(41, 41, 41);
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 @media(max-width: 600px) {
     .modal {
         width: 95%;

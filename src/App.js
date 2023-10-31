@@ -10,9 +10,10 @@ import MainSectionSkills from "./sections/skills/MainSectionSkills";
 import Footer from "../src/components/footer/Footer";
 import ContactModal from "./components/contactModal/ContactModal";
 import ScrollToTop from '../src/components/ScrollToTop/ScrollToTop'
+import SuccessMessage from './components/successMessage/SuccessMessage';
 
 function App() {
-  const { isActiveContactModal, burgerActive, theme } = useContext(Context);
+  const { isActiveContactModal, burgerActive, theme, messageOnSubmit } = useContext(Context);
   const whichTheme = theme ? "bgDark" : "bgLight";
   const contactModal = document.getElementById("contactModal");
   const [scrollable, setScrollable] = useState(true);
@@ -56,6 +57,7 @@ function App() {
           ReactDOM.createPortal(<ContactModal />, contactModal)}
           {scroll && <ScrollToTop/>}
       </div>
+      {messageOnSubmit && <SuccessMessage />}
     </div>
   );
 }

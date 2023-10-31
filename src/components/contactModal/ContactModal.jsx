@@ -6,7 +6,7 @@ import { faClose } from "@fortawesome/free-solid-svg-icons";
 import { useForm, ValidationError } from "@formspree/react";
 
 export default function ContactModal() {
-  const { setIsActiveContactModal, theme } = useContext(Context);
+  const { setIsActiveContactModal, theme, displaySuccessMessage } = useContext(Context);
   const whichTheme = theme ? styles.bgDark : styles.bgLight;
   const whichColor = theme ? styles.colorLight : styles.colorDark;
   const whichBorder = theme ? styles.borderLight : styles.borderDark;
@@ -16,22 +16,13 @@ export default function ContactModal() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [state, handleSubmit] = useForm("mjvqpyqa");
-  const [successMessage, setSuccessMessage] = useState(false);
+  
 
   const [errorMessages, setErrorMessages] = useState({
     nameError: false,
     emailError: false,
     messageError: false,
   });
-
-  const displaySuccessMessage = () => {
-    setSuccessMessage(true);
-
-    const id = setTimeout(() => {
-      setSuccessMessage(false);
-      clearTimeout(id);
-    }, 5000);
-  };
 
   const isPostValid = () => {
     let isValid = true;
@@ -73,6 +64,7 @@ export default function ContactModal() {
               setEmail("");
               setMessage("");
               handleSubmit(e);
+              setIsActiveContactModal(false);
               displaySuccessMessage();
             }}
             method="POST"
@@ -139,11 +131,6 @@ export default function ContactModal() {
             </button>
           </form>
         </div>
-        {successMessage && (
-          <div className={styles.successMessage}>
-            <p>Thank you for your Message!</p>
-          </div>
-        )}
       </div>
     </div>
   );

@@ -10,7 +10,17 @@ export const Provider = ({ children }) => {
   const [theme, setTheme] = useState(true);
   const [burgerActive, setBurgerActive] = useState(false);
   const [isActiveContactModal, setIsActiveContactModal] = useState(false);
+  const [messageOnSubmit, setMessageOnSubmit] = useState(false);
 
+
+  const displaySuccessMessage = () => {
+    setMessageOnSubmit(true);
+
+    const id = setTimeout(() => {
+      setMessageOnSubmit(false);
+      clearTimeout(id);
+    }, 4000);
+  };
 
   useEffect(() => {
     setSkills(Skills)
@@ -35,7 +45,9 @@ export const Provider = ({ children }) => {
     burgerActive,
     setBurgerActive,
     isActiveContactModal,
-    setIsActiveContactModal
+    setIsActiveContactModal,
+    messageOnSubmit,
+    displaySuccessMessage
   };
 
   return <Context.Provider value={contextObj}>{children}</Context.Provider>;

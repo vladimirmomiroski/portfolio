@@ -1,0 +1,14 @@
+.success-message {
+  width: 300px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(41, 41, 41);
+  background-color: #c5ffe4;
+  font-weight: 700;
+}

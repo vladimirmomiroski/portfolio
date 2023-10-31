@@ -72,7 +72,7 @@
   top: 10%;
   border-radius: 50%;
   overflow: hidden; 
-  animation: spin 6s linear infinite;
+  animation: spin 8s linear infinite;
 }
 
 @keyframes spin {
