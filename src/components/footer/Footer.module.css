@@ -45,7 +45,7 @@
 
 .icons:hover {
     transition: .3s ease-in-out;
-    background-color: #79d3ab;
+    background-color: #00f5e0;
 }
 
 @media(max-width: 768px) {
