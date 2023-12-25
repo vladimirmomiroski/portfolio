@@ -1,7 +1,7 @@
 const AboutData = [
 
   {
-    para: "Hello, my name is Vladimir Momiroski, I am 29 years old, I was born in Tetovo, I'm currently living in Skopje."
+    para: "Hello, my name is Vladimir Momiroski, I am 30 years old, I was born in Tetovo, I'm currently living in Skopje."
   },
   {
     para: " My interests have always been related to computers, as a child playing video games and today everything that is connected to programming. In addition to computers, i want to read and find out about various topics that interest me.",
