@@ -25,7 +25,7 @@ export default function Introduction() {
   whichLogo += theme ? "certificateDark.png" : "certificateLight.png";
 
   const downloadCv = () => {
-    FileSaver.saveAs("/resource/cv.pdf", "CV");
+    FileSaver.saveAs("/resource/vladimirmomiroski.pdf", "vladimirmomiroski");
   };
 
   const downloadCertificate = () => {
